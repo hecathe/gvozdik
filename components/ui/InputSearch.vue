@@ -1,7 +1,7 @@
 <template>
 	<div class="search">
-		<input class="search__input" placeholder="Поиск..." type="search" name="" id="">
 		<svg-icon class="search__icon" width="24" height="24" name="search"></svg-icon>
+		<input class="search__input" placeholder="Поиск..." type="search" name="" id="">
 	</div>
 </template>
 
@@ -11,17 +11,24 @@
 
 	&__input {
 		font-size: 20px;
-		line-height: 150%;
+		line-height: 120%;
 		background-color: $grey_m;
 		border: none;
 		border-radius: 10px;
-		padding: 8px 12px;
+		padding: 12px;
+		padding-left: 48px;
+
+		// &:focus {
+		// 	&+svg {
+		// 		display: none;
+		// 	}
+		// }
 	}
 
 	&__icon {
 		position: absolute;
 		top: 50%;
-		right: 12px;
+		left: 12px;
 		transform: translateY(-50%);
 	}
 }

@@ -1,8 +1,8 @@
 <template>
 	<ul class="user-actions">
-		<li v-for="(item, index) in userActions" :key="index">
-			<nuxt-link to="#">
-				<svg-icon :name="item.name"></svg-icon>
+		<li class="user-actions__item" v-for="(item, index) in userActions" :key="index">
+			<nuxt-link class="user-actions__link" to="#">
+				<svg-icon :name="item.name" width="24" height="24"></svg-icon>
 			</nuxt-link>
 		</li>
 	</ul>
@@ -18,3 +18,26 @@ export default {
 	}
 }
 </script>
+
+<style lang="scss" scoped>
+.user-actions {
+	display: flex;
+	column-gap: 20px;
+
+	@include reset-list;
+
+	&__link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 48px;
+		height: 48px;
+
+		&:hover {
+			svg {
+				--currentColor: #{$mainBlue};
+			}
+		}
+	}
+}
+</style>

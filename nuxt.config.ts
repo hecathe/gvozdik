@@ -22,5 +22,12 @@ export default defineNuxtConfig({
         },
       },
     },
+    vue: {
+        template: {
+            compilerOptions: {
+              isCustomElement: (tag) => tag.startsWith('swiper-')
+            }
+        }
+    }
   },
 });
