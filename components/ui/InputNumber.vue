@@ -38,22 +38,34 @@ export default {
 <style lang="scss" scoped>
 .number {
 	// width: max-content;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	display: flex;
 	background-color: $grey_m;
 
 	&__input {
 		width: 52px;
+		height: 100%;
+		text-align: center;
 		background-color: $grey_m;
 		border: none;
+		padding: 0;
+		// transition: background 150ms linear;
+
+		&:hover, &:focus {
+			outline: none;
+			background-color: $grey;
+		}
 	}
 
 	&__btn {
 		width: 52px;
-		height: 52px;
+		height: 100%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+
+		&:hover {
+			background-color: $grey;
+		}
 	}
 }
 </style>

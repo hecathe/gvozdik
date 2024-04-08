@@ -2,11 +2,27 @@
 	box-sizing: border-box;
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 body {
 	font-family: 'Inter', sans-serif;
 	font-size: 18px;
 	line-height: 150%;
 	color: $mainBlack;
+}
+
+img {
+	max-width: 100%;
 }
 
 button {
@@ -20,9 +36,22 @@ h1, h2, h3 {
 	margin: 0;
 }
 
+.h2 {
+	font-size: 36px;
+	line-height: 120%;
+}
+
+.h3 {
+	font-size: 24px;
+	line-height: 110%;
+}
+
 .container {
 	max-width: 1240px;
 	width: 100%;
 	margin: 0 auto;
 	padding: 0 16px;
+}
+.grey {
+	color: #909090;
 }

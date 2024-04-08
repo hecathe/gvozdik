@@ -45,17 +45,17 @@ export default {
 		font-weight: 500;
 		color: $mainBlack;
 		text-decoration: none;
+		// transition: color 150ms linear;
 
 		svg {
-			transition: right 150ms linear;
+			transition: transform 150ms linear;
 		}
 
 		&:hover {
-			// column-gap: 20px;
+			// color: $mainBlue;
 
 			svg {
-				position: relative;
-				right: -10px;
+				transform: translateX(10px);
 				--currentColor: #{$mainBlue};
 			}
 		}

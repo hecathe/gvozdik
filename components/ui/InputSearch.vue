@@ -17,12 +17,15 @@
 		border-radius: 10px;
 		padding: 12px;
 		padding-left: 48px;
+		transition: background 150ms linear;
 
-		// &:focus {
-		// 	&+svg {
-		// 		display: none;
-		// 	}
-		// }
+		&:focus, &:hover {
+			outline: none;
+			background-color: $grey;
+			// &+svg {
+			// 	display: none;
+			// }
+		}
 	}
 
 	&__icon {

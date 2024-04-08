@@ -2,18 +2,18 @@
 	<div class="goods-slider-card">
 		<swiper-container class="goods-slider-card__images" pagination="true" pagination-clickable="true">
 			<swiper-slide v-for="(item, index) in card.images" :key="index">
+				<!-- <div class="hover-area"></div>
 				<div class="hover-area"></div>
 				<div class="hover-area"></div>
-				<div class="hover-area"></div>
-				<div class="hover-area"></div>
-				<img :src="item" alt="">
+				<div class="hover-area"></div> -->
+				<img class="goods-slider-card__img" :src="item" alt="">
 			</swiper-slide>
 		</swiper-container>
 
 		<div class="goods-slider-card__info">
 			<nuxt-link class="goods-slider-card__text" to="#">
-				<h3>{{ card.title }}</h3>
-				<span>{{ card.price }}</span>
+				<h3 class="goods-slider-card__title h3">{{ card.title }}</h3>
+				<span class="goods-slider-card__price">{{ card.price }}</span>
 			</nuxt-link>
 
 			<div class="goods-slider-card__actions">
@@ -58,10 +58,45 @@ export default {
 		}
 	}
 
+	&__images {
+		max-height: 250px;
+	}
+
+	&__img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	&__info {
+		display: grid;
+		row-gap: 20px;
+		margin-top: 16px;
+	}
+
+	&__text {
+		display: flex;
+		justify-content: space-between;
+		column-gap: 20px;
+		color: inherit;
+		text-decoration: none;
+
+		&:hover {
+			color: $darkBlue;
+		}
+	}
+
+	&__price {
+		font-weight: 700;
+		font-size: 22px;
+		line-height: 120%;
+		white-space: nowrap;
+	}
+
 	&__actions {
 		display: flex;
 		justify-content: space-between;
-		column-gap: 28px;
+		// column-gap: 28px;
 	}
 }
 

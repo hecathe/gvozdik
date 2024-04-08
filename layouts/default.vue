@@ -1,7 +1,8 @@
 <template>
 	<Notice></Notice>
-	<AppHeader :nav-list="menu" :user-actions="userMenu"></AppHeader>
+	<AppHeader :nav-list="menu" :user-actions="user_menu"></AppHeader>
 	<slot />
+	<AppFooter :nav-list="catalog_nav" :footer-menu="menu" :social-list="social"></AppFooter>
 </template>
 
 <script>
@@ -14,7 +15,7 @@ export default {
 				'Доставка',
 				'Контакты',
 			],
-			userMenu: [
+			user_menu: [
 				{
 					name: 'heart',
 				},
@@ -24,6 +25,34 @@ export default {
 				{
 					name: 'cart',
 				}
+			],
+			catalog_nav: [
+				'Электрика',
+				'Инструмент',
+				'Сантехника',
+				'Стройматериалы',
+				'Электрика',
+				'Инструмент',
+				'Сантехника',
+				'Стройматериалы',
+				'Электрика',
+				'Инструмент',
+				'Сантехника',
+				'Стройматериалы',
+			],
+			social: [
+				{
+					whatsapp: '#',
+				},
+				{
+					telegram: '#',
+				},
+				{
+					youtube: '#',
+				},
+				{
+					vk: '#',
+				},
 			]
 		}
 	},
