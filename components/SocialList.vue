@@ -33,9 +33,10 @@ export default {
 		height: 40px;
 		background-color: $mainOrange;
 		border-radius: 100%;
+		transition: background 150ms linear;
 
 		&:hover {
-			background-color: $mainBlack;
+			background-color: $darkBlue;
 		}
 	}
 

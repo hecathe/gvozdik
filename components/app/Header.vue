@@ -2,9 +2,9 @@
 	<header class="header">
 		<div class="container">
 			<div class="header__top">
-				<div class="header__logo">
+				<nuxt-link to="/" class="header__logo">
 					<svg-icon name="logo" width="121" height="64"></svg-icon>
-				</div>
+				</nuxt-link>
 
 				<AppHeaderNav :nav-list="navList"></AppHeaderNav>
 
@@ -22,6 +22,8 @@
 
 				<AppHeaderUserActions :user-actions="userActions"></AppHeaderUserActions>
 			</div>
+
+			<AppMenu></AppMenu>
 		</div>
 	</header>
 </template>

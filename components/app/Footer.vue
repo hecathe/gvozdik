@@ -1,9 +1,11 @@
 <template>
 	<footer class="footer">
 		<div class="container">
-			<div class="footer__wrap">
+			<div class="footer__top">
 				<div class="footer__block">
-					<svg-icon class="footer__logo" name="logo" width="200" height="60"></svg-icon>
+					<nuxt-link to="/" class="footer__logo">
+						<svg-icon name="logo" width="150" height="64"></svg-icon>
+					</nuxt-link>
 					<a class="footer__tel" href="tel:8 800 555 55 55">8 800 555 55 55</a>
 
 					<social-list :social-list="socialList"></social-list>
@@ -13,10 +15,20 @@
 					<h3 class="footer__title">Каталог</h3>
 					<AppFooterNav :nav-list="navList"></AppFooterNav>
 				</div>
-				<AppFooterMenu :footer-menu="footerMenu"></AppFooterMenu>
-			</div>
-			<div class="footer__wrap">
 
+				<div class="footer__block">
+					<AppFooterMenu :footer-menu="footerMenu"></AppFooterMenu>
+				</div>
+			</div>
+
+			<div class="footer__bottom">
+				<div class="footer__block">
+					<span>© 2024 «Гвоздик»</span>
+					<nuxt-link class="footer__link" to="#">Политика конфиденциальности</nuxt-link>
+				</div>
+				<div class="footer__block">
+					<payment-list :payment-list="paymentList"></payment-list>
+				</div>
 			</div>
 		</div>
 	</footer>
@@ -36,6 +48,10 @@ export default {
 		socialList: {
 			type: Array,
 			default: () => [],
+		},
+		paymentList: {
+			type: Array,
+			default: () => [],
 		}
 	}
 }
@@ -44,23 +60,55 @@ export default {
 <style lang="scss" scoped>
 .footer {
 	background-color: $grey;
-	padding-top: 40px;
-	padding-bottom: 40px;
 
-	&__wrap {
+	&__top {
 		display: flex;
 		justify-content: space-between;
+		padding: 40px 0 60px;
 	}
 
 	&__block {
-		display: grid;
+		display: flex;
+		flex-direction: column;
 		row-gap: 24px;
+		font-weight: 500;
+	}
+
+	&__logo {
+		display: flex;
+	}
+
+	&__tel {
+		font-weight: 700;
+		font-size: 28px;
+		line-height: 120%;
+		color: inherit;
+		text-decoration: none;
+
+		&:hover {
+			color: $darkBlue;
+		}
+	}
+
+	&__link {
+		color: inherit;
+
+		&:hover {
+			text-decoration: none;
+		}
 	}
 
 	&__title {
 		font-weight: 700;
 		font-size: 28px;
 		line-height: 120%;
+	}
+
+	&__bottom {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		border-top: 1px solid $mainBlack;
+		padding: 28px 0;
 	}
 }
 </style>
