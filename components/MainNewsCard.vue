@@ -1,7 +1,7 @@
 <template>
 	<div v-if="newsCard.img_left" class="main-news-card">
 		<div class="main-news-card__img">
-			<img src="/images/work-tools.jpg" alt="">
+			<img :src="newsCard.image" alt="">
 		</div>
 
 		<div class="main-news-card__content">
@@ -19,7 +19,7 @@
 		</div>
 
 		<div class="main-news-card__img">
-			<img src="/images/work-tools.jpg" alt="">
+			<img :src="newsCard.image" alt="">
 		</div>
 	</div>
 </template>

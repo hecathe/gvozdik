@@ -34,122 +34,122 @@ export default {
 		return {
 			slides: [
 				{
-					url: '/images/tools.jpg'
+					url: 'images/tools.jpg'
 				},
 				{
-					url: '/images/tools.jpg'
+					url: 'images/tools.jpg'
 				},
 				{
-					url: '/images/tools.jpg'
+					url: 'images/tools.jpg'
 				},
 			],
 			catalogNav: [
 				{
 					title: 'Инструменты',
-					url: '/images/y-tools.jpg',
+					url: 'images/y-tools.jpg',
 					span: false,
 				},
 				{
 					title: 'Электрика',
-					url: '/images/y-tools.jpg',
+					url: 'images/y-tools.jpg',
 					span: false,
 
 				},
 				{
 					title: 'Сантехника',
-					url: '/images/y-tools.jpg',
+					url: 'images/y-tools.jpg',
 					span: false,
 				},
 				{
 					title: 'Инструменты',
-					url: '/images/y-tools.jpg',
+					url: 'images/y-tools.jpg',
 					span: false,
 				},
 				{
 					title: 'Электрика',
-					url: '/images/y-tools.jpg',
+					url: 'images/y-tools.jpg',
 					span: false,
 				},
 				{
 					title: 'Сантехника',
-					url: '/images/y-tools.jpg',
+					url: 'images/y-tools.jpg',
 					span: false,
 				},
 				{
 					title: 'Весь каталог',
-					url: '/images/y-tools.jpg',
+					url: 'images/y-tools.jpg',
 					span: true,
 				},
 			],
 			saleCards: [
 				{
-					images: ['/images/goods-item-1.jpg', '/images/goods-item-1.jpg', '/images/goods-item-1.jpg'],
+					images: ['images/goods-item-1.jpg', 'images/goods-item-1.jpg', 'images/goods-item-1.jpg'],
 					title: 'Клещи переставные Sparta 250 мм',
 					price: '150 ₽',
 				},
 				{
-					images: ['/images/goods-item-1.jpg', '/images/goods-item-1.jpg', '/images/goods-item-1.jpg'],
+					images: ['images/goods-item-1.jpg', 'images/goods-item-1.jpg', 'images/goods-item-1.jpg'],
 					title: 'Клещи переставные Sparta 250 мм',
 					price: '150 ₽',
 				},
 				{
-					images: ['/images/goods-item-1.jpg', '/images/goods-item-1.jpg', '/images/goods-item-1.jpg'],
+					images: ['images/goods-item-1.jpg', 'images/goods-item-1.jpg', 'images/goods-item-1.jpg'],
 					title: 'Клещи переставные Sparta 250 мм',
 					price: '150 ₽',
 				},
 				{
-					images: ['/images/goods-item-1.jpg', '/images/goods-item-1.jpg', '/images/goods-item-1.jpg'],
+					images: ['images/goods-item-1.jpg', 'images/goods-item-1.jpg', 'images/goods-item-1.jpg'],
 					title: 'Клещи переставные Sparta 250 мм',
 					price: '150 ₽',
 				},
 				{
-					images: ['/images/goods-item-1.jpg', '/images/goods-item-1.jpg', '/images/goods-item-1.jpg'],
+					images: ['images/goods-item-1.jpg', 'images/goods-item-1.jpg', 'images/goods-item-1.jpg'],
 					title: 'Клещи переставные Sparta 250 мм',
 					price: '150 ₽',
 				},
 			],
 			newCards: [
 				{
-					images: ['/images/goods-item-1.jpg', '/images/goods-item-1.jpg', '/images/goods-item-1.jpg'],
+					images: ['images/goods-item-1.jpg', 'images/goods-item-1.jpg', 'images/goods-item-1.jpg'],
 					title: 'Клещи переставные Sparta 250 мм',
 					price: '150 ₽',
 				},
 				{
-					images: ['/images/goods-item-1.jpg', '/images/goods-item-1.jpg', '/images/goods-item-1.jpg'],
+					images: ['images/goods-item-1.jpg', 'images/goods-item-1.jpg', 'images/goods-item-1.jpg'],
 					title: 'Клещи переставные Sparta 250 мм',
 					price: '150 ₽',
 				},
 				{
-					images: ['/images/goods-item-1.jpg', '/images/goods-item-1.jpg', '/images/goods-item-1.jpg'],
+					images: ['images/goods-item-1.jpg', 'images/goods-item-1.jpg', 'images/goods-item-1.jpg'],
 					title: 'Клещи переставные Sparta 250 мм',
 					price: '150 ₽',
 				},
 				{
-					images: ['/images/goods-item-1.jpg', '/images/goods-item-1.jpg', '/images/goods-item-1.jpg'],
+					images: ['images/goods-item-1.jpg', 'images/goods-item-1.jpg', 'images/goods-item-1.jpg'],
 					title: 'Клещи переставные Sparta 250 мм',
 					price: '150 ₽',
 				},
 				{
-					images: ['/images/goods-item-1.jpg', '/images/goods-item-1.jpg', '/images/goods-item-1.jpg'],
+					images: ['images/goods-item-1.jpg', 'images/goods-item-1.jpg', 'images/goods-item-1.jpg'],
 					title: 'Клещи переставные Sparta 250 мм',
 					price: '150 ₽',
 				},
 			],
 			news: [
 				{
-					image: '/images/work-tools.jpg',
+					image: 'images/work-tools.jpg',
 					title: 'Заголовок новости',
 					text: '<p>Задача организации, в особенности же убеждённость некоторых оппонентов, в своём классическом представлении, допускает внедрение как самодостаточных, так и внешне зависимых концептуальных решений.</p><p>Задача организации, в особенности же убеждённость некоторых оппонентов, в своём классическом представлении, допускает внедрение как самодостаточных, так и внешне зависимых концептуальных решений.</p>',
 					img_left: true,
 				},
 				{
-					image: '/images/work-tools.jpg',
+					image: 'images/work-tools.jpg',
 					title: 'Заголовок новости',
 					text: '<p>Задача организации, в особенности же убеждённость некоторых оппонентов, в своём классическом представлении, допускает внедрение как самодостаточных, так и внешне зависимых концептуальных решений.</p>',
 					img_left: false,
 				},
 				{
-					image: '/images/work-tools.jpg',
+					image: 'images/work-tools.jpg',
 					title: 'Заголовок новости',
 					text: '<p>Задача организации, в особенности же убеждённость некоторых оппонентов, в своём классическом представлении, допускает внедрение как самодостаточных, так и внешне зависимых концептуальных решений.</p>',
 					img_left: true,
