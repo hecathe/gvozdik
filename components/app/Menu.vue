@@ -6,6 +6,13 @@
                     <nuxt-link :to="item.url">{{ item.name }}</nuxt-link>
                 </li>
             </ul>
+
+            <div>
+                <h2>Инструмент</h2>
+                <ul>
+                    
+                </ul>
+            </div>
         </div>
     </div>
 </template>
@@ -24,6 +31,5 @@ export default {
 <style scoped>
 .menu {
     position: absolute;
-    display: none;
 }
 </style>

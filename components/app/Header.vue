@@ -13,7 +13,7 @@
 
 			<div class="header__bottom">
 				<div class="header__wrap">
-					<button class="header__catalog-btn">
+					<button @click="isMenuOpen = !isMenuOpen" class="header__catalog-btn">
 						<svg-icon width="24" height="24" name="more-grid"></svg-icon>
 						<span>Каталог</span>
 					</button>
@@ -23,7 +23,7 @@
 				<AppHeaderUserActions :user-actions="userActions"></AppHeaderUserActions>
 			</div>
 
-			<AppMenu></AppMenu>
+			<AppMenu v-if="isMenuOpen"></AppMenu>
 		</div>
 	</header>
 </template>
@@ -39,7 +39,12 @@ export default {
 			type: Array,
 			default: () => [],
 		}
-	}
+	},
+	data() {
+		return {
+			isMenuOpen: false,
+		}
+	},
 }
 </script>
 
