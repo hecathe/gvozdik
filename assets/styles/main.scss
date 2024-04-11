@@ -36,6 +36,16 @@ h1, h2, h3 {
 	margin: 0;
 }
 
+p {
+	margin: 0;
+}
+
+.h1 {
+	font-size: 52px;
+	line-height: 120%;
+	margin-bottom: 40px;
+}
+
 .h2 {
 	font-size: 36px;
 	line-height: 120%;
@@ -58,4 +68,11 @@ h1, h2, h3 {
 }
 .grey {
 	color: #909090;
+}
+
+swiper-container::part(button-next) {
+	color: $white;
+}
+swiper-container::part(button-prev) {
+	color: $white;
 }

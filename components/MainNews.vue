@@ -1,6 +1,6 @@
 <template>
 	<the-section>
-		<app-title link link-text="все новости">Новости компании</app-title>
+		<app-title link link-text="все новости" url="/news/">Новости компании</app-title>
 
 		<main-news-list :news-list="newsList"></main-news-list>
 	</the-section>

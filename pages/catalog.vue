@@ -29,7 +29,7 @@ export default {
                     active: false,
                 },
                 {
-                    link: '/catalog',
+                    link: '#',
                     title: 'Каталог',
                     active: true,
                 }

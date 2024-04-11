@@ -646,7 +646,7 @@ const _routes = [
     meta: { ...{}, ...{ "layout": "svg-sprite" } },
     alias: [],
     redirect: void 0 ,
-    component: () => import('./icons-page-BdWDwOXs.mjs').then((m) => m.default || m)
+    component: () => import('./icons-page-B41s7Ylq.mjs').then((m) => m.default || m)
   },
   {
     name: "catalog",
@@ -654,7 +654,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./catalog-CIa35YI1.mjs').then((m) => m.default || m)
+    component: () => import('./catalog-D87vKNY0.mjs').then((m) => m.default || m)
   },
   {
     name: "index",
@@ -662,7 +662,23 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./index-BkouPY4U.mjs').then((m) => m.default || m)
+    component: () => import('./index-CAX79QEO.mjs').then((m) => m.default || m)
+  },
+  {
+    name: "news-id",
+    path: "/news/:id()",
+    meta: {},
+    alias: [],
+    redirect: void 0 ,
+    component: () => import('./_id_-CC1Zi34r.mjs').then((m) => m.default || m)
+  },
+  {
+    name: "news",
+    path: "/news",
+    meta: {},
+    alias: [],
+    redirect: void 0 ,
+    component: () => import('./index-CefD4JK-.mjs').then((m) => m.default || m)
   }
 ];
 const _wrapIf = (component, props, slots) => {
@@ -975,7 +991,7 @@ const revive_payload_server_eJ33V7gbc6 = /* @__PURE__ */ defineNuxtPlugin({
     }
   }
 });
-const LazySvgIcon = defineAsyncComponent(() => import('./svg-icon-Dp58G3yw.mjs').then((r) => r.default));
+const LazySvgIcon = defineAsyncComponent(() => import('./svg-icon-DQgAt3HU.mjs').then((r) => r.default));
 const lazyGlobalComponents = [
   ["SvgIcon", LazySvgIcon]
 ];
@@ -999,7 +1015,7 @@ const plugins = [
   swiper_xwaaUO4rVf
 ];
 const layouts = {
-  default: () => import('./default-Bi7cXFiZ.mjs').then((m) => m.default || m),
+  default: () => import('./default-zkuCvYXZ.mjs').then((m) => m.default || m),
   "svg-sprite": () => import('./svg-sprite-DzjrLdLb.mjs').then((m) => m.default || m)
 };
 const LayoutLoader = defineComponent({

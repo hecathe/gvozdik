@@ -1,7 +1,7 @@
 <template>
 	<ul class="footer-menu">
 		<li class="footer-menu__item" v-for="(item, index) in footerMenu" :key="index">
-			<nuxt-link class="footer-menu__link" to="#">{{ item }}</nuxt-link>
+			<nuxt-link class="footer-menu__link" :to="item.link">{{ item.name }}</nuxt-link>
 		</li>
 	</ul>
 </template>

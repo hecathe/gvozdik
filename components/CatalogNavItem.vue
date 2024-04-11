@@ -50,10 +50,12 @@ export default {
 		text-decoration: none;
 		padding: 28px;
 		transition: all 150ms linear;
+		overflow: hidden;
 
 		&:hover {
 			box-shadow: 0 4px 20px rgba(40, 40, 40, 25%);
 			transform: scale(1.05);
+			border-radius: 10px;
 		}
 	}
 

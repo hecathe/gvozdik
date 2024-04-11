@@ -4,7 +4,7 @@
 			<slot></slot>
 		</h2>
 
-		<nuxt-link v-if="link" to="#" class="title__link">
+		<nuxt-link v-if="link" :to="url" class="title__link">
 			<span>{{ linkText }}</span>
 			<svg-icon class="title__icon" width="24" height="24" name="arrow-right"></svg-icon>
 		</nuxt-link>
@@ -21,6 +21,10 @@ export default {
 		linkText: {
 			type: String,
 			default: '',
+		},
+		url: {
+			type: String,
+			default: '#',
 		}
 	}
 }

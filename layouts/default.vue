@@ -18,52 +18,69 @@
 export default {
 	data() {
 		return {
-		menu: ["Новости", "О компании", "Доставка", "Контакты"],
-		user_menu: [
-			{
-			name: "heart",
-			},
-			{
-			name: "user",
-			},
-			{
-			name: "cart",
-			},
-		],
-		catalog_nav: [
-			"Электрика",
-			"Инструмент",
-			"Сантехника",
-			"Стройматериалы",
-			"Электрика",
-			"Инструмент",
-			"Сантехника",
-			"Стройматериалы",
-			"Электрика",
-			"Инструмент",
-			"Сантехника",
-			"Стройматериалы",
-		],
-		social: [
-			{
-			whatsapp: "#",
-			},
-			{
-			telegram: "#",
-			},
-			{
-			youtube: "#",
-			},
-			{
-			vk: "#",
-			},
-		],
-		cards: [
-			"images/mastercard.png",
-			"images/visa.png",
-			"images/sbp.png",
-			"images/mir.png",
-		],
+			menu: [
+				{
+					name: "Новости",
+					link: "/news"
+				},
+				{
+					name: "О компании",
+					link: "/about-company"
+				},
+				{
+					name: "Доставка",
+					link: "/deivery",
+				},
+				{
+					name: "Контакты",
+					link: "/contacts",
+				},
+			],
+			user_menu: [
+				{
+				name: "heart",
+				},
+				{
+				name: "user",
+				},
+				{
+				name: "cart",
+				},
+			],
+			catalog_nav: [
+				"Электрика",
+				"Инструмент",
+				"Сантехника",
+				"Стройматериалы",
+				"Электрика",
+				"Инструмент",
+				"Сантехника",
+				"Стройматериалы",
+				"Электрика",
+				"Инструмент",
+				"Сантехника",
+				"Стройматериалы",
+			],
+			social: [
+				{
+				whatsapp: "#",
+				},
+				{
+				telegram: "#",
+				},
+				{
+				youtube: "#",
+				},
+				{
+				vk: "#",
+				},
+			],
+			cards: [
+				"images/mastercard.png",
+				"images/visa.png",
+				"images/sbp.png",
+				"images/mir.png",
+			],
 		};
 	},
 };

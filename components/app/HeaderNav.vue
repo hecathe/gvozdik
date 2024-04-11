@@ -2,7 +2,7 @@
 	<nav class="nav">
 		<ul class="nav__list">
 			<li class="nav__item" v-for="(navItem, index) in navList" :key="index">
-				<nuxt-link class="nav__link" to="#">{{ navItem }}</nuxt-link>
+				<nuxt-link class="nav__link" :to="navItem.link">{{ navItem.name }}</nuxt-link>
 			</li>
 		</ul>
 	</nav>
