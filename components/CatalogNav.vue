@@ -1,6 +1,6 @@
 <template>
 	<ul class="catalog-nav-list">
-		<catalog-nav-item v-for="(item, index) in catalogNav" :key="index" :title="item.title" :img-url="item.url" :is-span="item.span"></catalog-nav-item>
+		<catalog-nav-item v-for="(item, index) in catalogNav" :key="index" :title="item.title" :img-url="item.url" :link="item.link" :is-span="item.span"></catalog-nav-item>
 	</ul>
 </template>
 
@@ -11,7 +11,7 @@ export default {
 			type: Array,
 			default: () => [],
 		}
-	}
+	},
 }
 </script>
 

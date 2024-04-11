@@ -47,37 +47,44 @@ export default {
 				{
 					title: 'Инструменты',
 					url: 'images/y-tools.jpg',
+					link: '#',
 					span: false,
 				},
 				{
 					title: 'Электрика',
 					url: 'images/y-tools.jpg',
+					link: '#',
 					span: false,
 
 				},
 				{
 					title: 'Сантехника',
 					url: 'images/y-tools.jpg',
+					link: '#',
 					span: false,
 				},
 				{
 					title: 'Инструменты',
 					url: 'images/y-tools.jpg',
+					link: '#',
 					span: false,
 				},
 				{
 					title: 'Электрика',
 					url: 'images/y-tools.jpg',
+					link: '#',
 					span: false,
 				},
 				{
 					title: 'Сантехника',
 					url: 'images/y-tools.jpg',
+					link: '#',
 					span: false,
 				},
 				{
 					title: 'Весь каталог',
 					url: 'images/y-tools.jpg',
+					link: '/catalog',
 					span: true,
 				},
 			],

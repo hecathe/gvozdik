@@ -20,19 +20,34 @@ export default {
 <style lang="scss" scoped>
 .footer-menu {
 	display: grid;
-	row-gap: 24px;
+	row-gap: 16px;
 	justify-items: flex-end;
 	@include reset-list;
 
 	&__link {
+		position: relative;
 		font-weight: 700;
 		font-size: 28px;
 		line-height: 120%;
 		color: inherit;
 		text-decoration: none;
+		padding-bottom: 8px;
+
+		&::after {
+			position: absolute;
+			content: '';
+			left: 0;
+			bottom: 0;
+			width: 0;
+			height: 2px;
+			background-color: $mainBlue;
+			transition: width 150ms linear;
+		}
 
 		&:hover {
-			border-bottom: 2px solid $mainBlue;
+			&::after {
+				width: 100%;
+			}
 		}
 	}
 }

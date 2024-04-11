@@ -1,6 +1,6 @@
 <template>
 	<li class="catalog-nav-item" :class="{'span-2': isSpan}">
-		<nuxt-link to="#" class="catalog-nav-item__link">
+		<nuxt-link :to="link" class="catalog-nav-item__link">
 			<div class="catalog-nav-item__content">
 				<h3>{{ title }}</h3>
 				<svg-icon class="catalog-nav-item__icon" width="28" height="28" name="arrow-down-right"></svg-icon>
@@ -26,6 +26,10 @@ export default {
 		},
 		isSpan : {
 			type: Boolean,
+			default: '',
+		},
+		link: {
+			type: String,
 			default: '',
 		}
 	}

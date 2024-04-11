@@ -97,6 +97,11 @@ export default {
 		background-color: $mainBlue;
 		border-radius: 10px;
 		padding: 12px;
+		transition: background 150ms linear;
+
+		&:hover {
+			background-color: $darkBlue;
+		}
 	}
 }
 </style>

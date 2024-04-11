@@ -1,6 +1,6 @@
 <template>
 	<div class="goods-slider-card">
-		<swiper-container class="goods-slider-card__images" pagination="true" pagination-clickable="true">
+		<swiper-container class="goods-slider-card__images" pagination="true" pagination-clickable="true" allow-touch-move="false">
 			<swiper-slide v-for="(item, index) in card.images" :key="index">
 				<!-- <div class="hover-area"></div>
 				<div class="hover-area"></div>

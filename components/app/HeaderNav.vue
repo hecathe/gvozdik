@@ -28,14 +28,29 @@ export default {
 	}
 
 	&__link {
+		position: relative;
 		font-size: 20px;
 		font-weight: 500;
 		color: $mainBlack;
 		text-decoration: none;
 		padding: 12px 0;
 
+		&::after {
+			position: absolute;
+			content: '';
+			left: 0;
+			bottom: 0;
+			width: 0;
+			height: 2px;
+			background-color: $mainBlue;
+			transition: width 150ms linear;
+			// border-bottom: 2px solid $mainBlue;
+		}
+
 		&:hover {
-			border-bottom: 2px solid $mainBlue;
+			&::after {
+				width: 100%;
+			}
 		}
 	}
 }

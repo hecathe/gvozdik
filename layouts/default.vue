@@ -4,7 +4,7 @@
 		:nav-list="menu"
 		:user-actions="user_menu"
 	></AppHeader>
-	<AppMenu></AppMenu>
+	<!-- <AppMenu></AppMenu> -->
 	<slot />
 	<AppFooter
 		:nav-list="catalog_nav"
