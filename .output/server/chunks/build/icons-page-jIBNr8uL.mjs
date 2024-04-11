@@ -1,4 +1,4 @@
-import _sfc_main$1 from './svg-icon-D4XO2x1k.mjs';
+import _sfc_main$1 from './svg-icon-C6ZEjqln.mjs';
 import { u as useHead } from './index-BabADJUJ.mjs';
 import { ref, computed, mergeProps, useSSRContext } from 'vue';
 import { ssrRenderAttrs, ssrRenderAttr, ssrRenderList, ssrInterpolate, ssrRenderComponent } from 'vue/server-renderer';
@@ -16,21 +16,21 @@ import 'vue-router';
 import 'swiper/element/bundle';
 
 const icons = [
-  "icons/cart",
   "icons/arrow-down-right",
   "icons/add-plus",
-  "icons/heart",
   "icons/arrow-right",
+  "icons/cart",
   "icons/close",
   "icons/more-grid",
+  "icons/heart",
   "icons/logo",
-  "icons/remove-minus",
-  "icons/telegram",
   "icons/user",
   "icons/search",
+  "icons/remove-minus",
+  "icons/telegram",
   "icons/vk",
-  "icons/whatsapp",
-  "icons/youtube"
+  "icons/youtube",
+  "icons/whatsapp"
 ];
 const _sfc_main = {
   __name: "icons-page",
@@ -94,4 +94,4 @@ _sfc_main.setup = (props, ctx) => {
 const iconsPage = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-ada2fcf8"]]);
 
 export { iconsPage as default };
-//# sourceMappingURL=icons-page-VxgSdzNK.mjs.map
+//# sourceMappingURL=icons-page-jIBNr8uL.mjs.map

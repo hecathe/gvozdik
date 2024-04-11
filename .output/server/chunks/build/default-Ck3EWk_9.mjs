@@ -1,4 +1,4 @@
-import _sfc_main$c from './svg-icon-D4XO2x1k.mjs';
+import _sfc_main$c from './svg-icon-C6ZEjqln.mjs';
 import { useSSRContext, mergeProps, withCtx, createTextVNode, toDisplayString, createVNode } from 'vue';
 import { ssrRenderComponent, ssrRenderSlot, ssrRenderAttrs, ssrRenderList, ssrInterpolate, ssrRenderAttr } from 'vue/server-renderer';
 import { _ as _export_sfc } from './server.mjs';
@@ -512,10 +512,10 @@ const _sfc_main = {
         }
       ],
       cards: [
-        "/images/mastercard.png",
-        "/images/visa.png",
-        "/images/sbp.png",
-        "/images/mir.png"
+        "images/mastercard.png",
+        "images/visa.png",
+        "images/sbp.png",
+        "images/mir.png"
       ]
     };
   }
@@ -550,4 +550,4 @@ _sfc_main.setup = (props, ctx) => {
 const _default = /* @__PURE__ */ _export_sfc(_sfc_main, [["ssrRender", _sfc_ssrRender]]);
 
 export { _default as default };
-//# sourceMappingURL=default-D8uAYQhj.mjs.map
+//# sourceMappingURL=default-Ck3EWk_9.mjs.map
