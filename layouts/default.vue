@@ -25,15 +25,15 @@ export default {
 				},
 				{
 					name: "О компании",
-					link: "/about-company"
+					link: "#"
 				},
 				{
 					name: "Доставка",
-					link: "/deivery",
+					link: "#",
 				},
 				{
 					name: "Контакты",
-					link: "/contacts",
+					link: "#",
 				},
 			],
 			user_menu: [

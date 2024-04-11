@@ -646,7 +646,7 @@ const _routes = [
     meta: { ...{}, ...{ "layout": "svg-sprite" } },
     alias: [],
     redirect: void 0 ,
-    component: () => import('./icons-page-B41s7Ylq.mjs').then((m) => m.default || m)
+    component: () => import('./icons-page-B2m0OVNQ.mjs').then((m) => m.default || m)
   },
   {
     name: "catalog",
@@ -654,7 +654,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./catalog-D87vKNY0.mjs').then((m) => m.default || m)
+    component: () => import('./catalog-Btb6iuoR.mjs').then((m) => m.default || m)
   },
   {
     name: "index",
@@ -662,7 +662,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./index-CAX79QEO.mjs').then((m) => m.default || m)
+    component: () => import('./index-BdeqJNHM.mjs').then((m) => m.default || m)
   },
   {
     name: "news-id",
@@ -670,7 +670,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_id_-CC1Zi34r.mjs').then((m) => m.default || m)
+    component: () => import('./_id_-NnXwGm2l.mjs').then((m) => m.default || m)
   },
   {
     name: "news",
@@ -991,7 +991,7 @@ const revive_payload_server_eJ33V7gbc6 = /* @__PURE__ */ defineNuxtPlugin({
     }
   }
 });
-const LazySvgIcon = defineAsyncComponent(() => import('./svg-icon-DQgAt3HU.mjs').then((r) => r.default));
+const LazySvgIcon = defineAsyncComponent(() => import('./svg-icon-BzEgLnGH.mjs').then((r) => r.default));
 const lazyGlobalComponents = [
   ["SvgIcon", LazySvgIcon]
 ];
@@ -1015,7 +1015,7 @@ const plugins = [
   swiper_xwaaUO4rVf
 ];
 const layouts = {
-  default: () => import('./default-zkuCvYXZ.mjs').then((m) => m.default || m),
+  default: () => import('./default-B0gm57nX.mjs').then((m) => m.default || m),
   "svg-sprite": () => import('./svg-sprite-DzjrLdLb.mjs').then((m) => m.default || m)
 };
 const LayoutLoader = defineComponent({
