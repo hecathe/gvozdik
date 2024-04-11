@@ -1,5 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  app: {
+    baseURL: "/gvozdik/",
+  },
   css: ["normalize.css/normalize.css", "~/assets/styles/main.scss"],
   devtools: { enabled: true },
   modules: [
