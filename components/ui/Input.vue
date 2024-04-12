@@ -1,7 +1,13 @@
 <template>
 	<div class="input">
 		<label :for="id" class="input__label">{{ label }}</label>
-		<input :type="type" :id="id" v-model="value" :placeholder="placeholder" class="input__field">
+		<input 
+			:type="type" 
+			:id="id" 
+			v-model="value" 
+			:placeholder="placeholder" 
+			class="input__field" 
+		>
 	</div>
 </template>
 
@@ -23,7 +29,7 @@ export default {
 		placeholder: {
 			type: String,
 			default: '',
-		}
+		},
 	},
 
 	 data() {
@@ -36,6 +42,8 @@ export default {
 
 <style lang="scss" scoped>
 .input {
+	$this: &;
+
 	display: grid;
 	row-gap: 8px;
 

@@ -15,7 +15,7 @@
                 </div>
             </div>
 
-            <swiper-container class="news-detail__slider news-detail-slider" navigation>
+            <swiper-container class="news-detail__slider news-detail-slider" navigation="true">
                 <swiper-slide class="news-detail-slider__item" v-for="(image, index) in content.images" :key="index">
                     <img class="news-detail-slider__img" :src="image" alt="">
                 </swiper-slide>
@@ -84,9 +84,14 @@ export default {
         margin-bottom: 60px;
     }
 
+    &__title {
+        margin-bottom: 16px;
+    }
+
     &__text {
         display: grid;
         row-gap: 40px;
+        margin-top: 40px;
     }
 
     &__aside {
