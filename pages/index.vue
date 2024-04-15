@@ -10,12 +10,12 @@
 
 		<the-section>
 			<app-title link link-text="все акции">Товары по акции / Популярное</app-title>
-			<goods-slider :cards="saleCards"></goods-slider>
+			<product-slider :cards="saleCards"></product-slider>
 		</the-section>
 
 		<the-section>
 			<app-title link link-text="все новинки">Новинки</app-title>
-			<goods-slider :cards="newCards"></goods-slider>
+			<product-slider :cards="newCards"></product-slider>
 		</the-section>
 
 		<main-about-company></main-about-company>
@@ -47,44 +47,44 @@ export default {
 				{
 					title: 'Инструменты',
 					url: 'images/y-tools.jpg',
-					link: '#',
+					link: '/catalog/tools/',
 					span: false,
 				},
 				{
 					title: 'Электрика',
 					url: 'images/y-tools.jpg',
-					link: '#',
+					link: '/catalog/electric/',
 					span: false,
 
 				},
 				{
 					title: 'Сантехника',
 					url: 'images/y-tools.jpg',
-					link: '#',
+					link: '/catalog/',
 					span: false,
 				},
 				{
 					title: 'Инструменты',
 					url: 'images/y-tools.jpg',
-					link: '#',
+					link: '/catalog/',
 					span: false,
 				},
 				{
 					title: 'Электрика',
 					url: 'images/y-tools.jpg',
-					link: '#',
+					link: '/catalog/',
 					span: false,
 				},
 				{
 					title: 'Сантехника',
 					url: 'images/y-tools.jpg',
-					link: '#',
+					link: '/catalog/',
 					span: false,
 				},
 				{
 					title: 'Весь каталог',
 					url: 'images/y-tools.jpg',
-					link: '/catalog',
+					link: '/catalog/',
 					span: true,
 				},
 			],

@@ -1,8 +1,22 @@
 <template>
-	<button class="btn">
+	<button 
+		class="btn"
+		:class="{'btn_ghost': isGhost}"
+	>
 		<slot></slot>
 	</button>
 </template>
+
+<script>
+export default {
+	props: {
+		isGhost: {
+			type: Boolean,
+			default: false,
+		}
+	}
+}
+</script>
 
 <style lang="scss">
 .btn {
@@ -22,6 +36,18 @@
 
 	&:hover {
 		background-color: $darkBlue;
+	}
+
+	&_ghost {
+		color: $mainBlue;
+		background: none;
+		border: 1px solid $mainBlue;
+
+		&:hover {
+			background: none;
+			color: $darkBlue;
+			border-color: $darkBlue;
+		}
 	}
 }
 </style>

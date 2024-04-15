@@ -1,5 +1,16 @@
 <template>
-	<div class="drop-down">
+	<div v-if="isToggle" class="drop-down drop-down_toggle">
+		<button
+		class="drop-down__btn"
+		@click="isOpen = !isOpen"
+		>
+			<span>{{ title }}</span>
+			
+			<ui-toggle id="1" :name="title" :value="title"></ui-toggle>
+		</button>
+	</div>
+
+	<div v-else class="drop-down">
 		<button
 		class="drop-down__btn"
 		@click="isOpen = !isOpen"
@@ -13,11 +24,14 @@
 		</button>
 
 		<div
-		class="drop-down__content"
-		v-if="isOpen"
+			class="drop-down__content"
+			v-if="isOpen"
 		>
 
-			<ul class="drop-down-list">
+			<ul 
+				class="drop-down-list"
+				:class="{'drop-down-list_flex': isFlex}"
+			>
 				<li
 				class="drop-down-list__item"
 				v-for="(item, index) in list"
@@ -37,8 +51,37 @@
 						<span>{{ item.name }}</span>
 					</nuxt-link>
 
-					<ui-checkbox v-else-if="isInputCheckbox" :id="index" :name="title">{{ item.name }}</ui-checkbox>
+					<ui-checkbox 
+						v-else-if="isInputCheckbox" 
+						:label="item.name"
+						:id="index" 
+						:name="title" 
+						:value="item.name"
+						:checkbox="true"
+						v-model="checked"
+					></ui-checkbox>
 
+					<ui-checkbox 
+						v-else-if="isInputCheckBtn" 
+						:label="item.name"
+						:id="index" 
+						:name="title" 
+						:value="item.name"
+						:checkbox="false"
+						v-model="checked"
+					></ui-checkbox>
+
+					<ui-radio 
+						v-else-if="isInputRadio" 
+						:label="item.name"
+						:id="index"
+						:value="index"
+						v-model="checked"
+					></ui-radio>
+
+					<ui-input-range
+						v-else-if="isRangeInput"
+					></ui-input-range>
 				</li>
 			</ul>
 
@@ -62,11 +105,31 @@ export default {
 			type: Array,
 			default: () => [],
 		},
+		isToggle: {
+			type: Boolean,
+			default: false,
+		},
 		isLink: {
 			type: Boolean,
 			default: false,
 		},
+		isFlex: {
+			type: Boolean,
+			default: false,	
+		},
 		isInputCheckbox: {
+			type: Boolean,
+			default: false,
+		},
+		isInputRadio: {
+			type: Boolean,
+			default: false,
+		},
+		isInputCheckBtn: {
+			type: Boolean,
+			default: false,
+		},
+		isRangeInput: {
 			type: Boolean,
 			default: false,
 		}
@@ -74,7 +137,8 @@ export default {
 
 	data() {
 		return {
-		isOpen: false,
+			isOpen: true,
+			checked: false,
 		};
 	},
 };
@@ -111,9 +175,16 @@ export default {
 	}
 
 	&-list {
-    display: grid;
-    row-gap: 16px;
-    @include reset-list;
+		display: grid;
+		row-gap: 16px;
+		@include reset-list;
+
+		&_flex {
+			display: flex;
+			flex-wrap: wrap;
+			column-gap: 16px;
+			row-gap: 16px;
+		}
 
 		&__link {
 			display: flex;

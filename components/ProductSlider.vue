@@ -1,8 +1,8 @@
 <template>
 	<div class="swiper">
-		<swiper-container class="goods-slider" slides-per-view="4" mousewheel="false" allow-touch-move="true" space-between="60">
-			<swiper-slide class="goods-slider__item" v-for="(item, index) in cards" :key="index">
-				<goods-slider-card :card="item"></goods-slider-card>
+		<swiper-container class="product-slider" slides-per-view="4" mousewheel="false" allow-touch-move="true" space-between="60">
+			<swiper-slide class="product-slider__item" v-for="(item, index) in cards" :key="index">
+				<product-card :card="item"></product-card>
 			</swiper-slide>
 		</swiper-container >
 	</div>

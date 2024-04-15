@@ -1,22 +1,22 @@
 <template>
-	<div class="goods-slider-card">
-		<swiper-container class="goods-slider-card__images" pagination="true" allow-touch-move="false">
+	<div class="product-card">
+		<swiper-container class="product-card__images" pagination="true" allow-touch-move="false" slides-per-view="1">
 			<swiper-slide v-for="(item, index) in card.images" :key="index">
 				<!-- <div class="hover-area"></div>
 				<div class="hover-area"></div>
 				<div class="hover-area"></div>
 				<div class="hover-area"></div> -->
-				<img class="goods-slider-card__img" :src="item" alt="">
+				<img class="product-card__img" :src="item" alt="">
 			</swiper-slide>
 		</swiper-container>
 
-		<div class="goods-slider-card__info">
-			<nuxt-link class="goods-slider-card__text" to="#">
-				<h3 class="goods-slider-card__title h3">{{ card.title }}</h3>
-				<span class="goods-slider-card__price">{{ card.price }}</span>
+		<div class="product-card__info">
+			<nuxt-link class="product-card__text" to="#">
+				<h3 class="product-card__title h3">{{ card.title }}</h3>
+				<span class="product-card__price">{{ card.price }}</span>
 			</nuxt-link>
 
-			<div class="goods-slider-card__actions">
+			<div class="product-card__actions">
 				<ui-input-number></ui-input-number>
 
 				<ui-button>
@@ -39,7 +39,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.goods-slider-card {
+.product-card {
 	.hover-area {
 		position: absolute;
 		width: 25%;
@@ -63,6 +63,7 @@ export default {
 	}
 
 	&__img {
+		max-width: 100%;
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
@@ -111,4 +112,8 @@ swiper-container::part(bullet-active) {
 	border-radius: 10px;
 	transition: width 150ms linear;
 }
+
+// swiper-slide {
+// 	max-width: min-content;
+// }
 </style>

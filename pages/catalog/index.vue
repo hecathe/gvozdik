@@ -8,12 +8,12 @@
 
         <the-section>
 			<app-title link link-text="все акции">Товары по акции / Популярное</app-title>
-			<goods-slider :cards="saleCards"></goods-slider>
+			<product-slider :cards="saleCards"></product-slider>
 		</the-section>
 
 		<the-section>
 			<app-title link link-text="все новинки">Новинки</app-title>
-			<goods-slider :cards="newCards"></goods-slider>
+			<product-slider :cards="newCards"></product-slider>
 		</the-section>
     </main>
 </template>
