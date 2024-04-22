@@ -20,10 +20,12 @@ export default {
 <style lang="scss" scoped>
 .product-grid {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(3, minmax(auto, 300px));
 	column-gap: 24px;
 	row-gap: 24px;
 	@include reset-list;
+	min-height: 0;
+    min-width: 0;
 
 	&__item {
 		&.span-2 {

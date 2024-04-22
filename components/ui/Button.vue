@@ -29,6 +29,7 @@ export default {
 	background-color: $mainBlue;
 	padding: 16px 28px;
 	transition: background 150ms linear;
+	white-space: nowrap;
 
 	svg {
 		--currentColor: #{$white};

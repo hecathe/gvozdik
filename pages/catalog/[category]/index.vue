@@ -28,6 +28,10 @@
 				<div class="catalog-category__grid">
 					<product-grid :product-list="products"></product-grid>
 				</div>
+
+				<div class="catalog-category__pagination">
+					<ui-pagination></ui-pagination>
+				</div>
             </div>
         </the-section>
     </main>
@@ -106,60 +110,60 @@ export default {
 			],
 			products: [
 				{
-					images: ['../images/goods-item-1.jpg', '../images/goods-item-1.jpg', '../images/goods-item-1.jpg'],
+					images: ['../../images/goods-item-1.jpg', '../../images/goods-item-1.jpg', '../../images/goods-item-1.jpg'],
 					title: 'Клещи переставные Sparta 250 мм',
 					price: '150 ₽',
 				},
 				{
-					images: ['../images/goods-item-1.jpg', '../images/goods-item-1.jpg', '../images/goods-item-1.jpg'],
+					images: ['../../images/goods-item-1.jpg', '../../images/goods-item-1.jpg', '../../images/goods-item-1.jpg'],
 					title: 'Клещи переставные Sparta 250 мм',
 					price: '150 ₽',
 					span: true,
 				},
 				{
-					images: ['../images/goods-item-1.jpg', '../images/goods-item-1.jpg', '../images/goods-item-1.jpg'],
+					images: ['../../images/goods-item-1.jpg', '../../images/goods-item-1.jpg', '../../images/goods-item-1.jpg'],
 					title: 'Клещи переставные Sparta 250 мм',
 					price: '150 ₽',
 					span: false,
 				},
 				{
-					images: ['../images/goods-item-1.jpg', '../images/goods-item-1.jpg', '../images/goods-item-1.jpg'],
+					images: ['../../images/goods-item-1.jpg', '../../images/goods-item-1.jpg', '../../images/goods-item-1.jpg'],
 					title: 'Клещи переставные Sparta 250 мм',
 					price: '150 ₽',
 					span: false,
 				},
 				{
-					images: ['../images/goods-item-1.jpg', '../images/goods-item-1.jpg', '../images/goods-item-1.jpg'],
+					images: ['../../images/goods-item-1.jpg', '../../images/goods-item-1.jpg', '../../images/goods-item-1.jpg'],
 					title: 'Клещи переставные Sparta 250 мм',
 					price: '150 ₽',
 					span: false,
 				},
 				{
-					images: ['../images/goods-item-1.jpg', '../images/goods-item-1.jpg', '../images/goods-item-1.jpg'],
+					images: ['../../images/goods-item-1.jpg', '../../images/goods-item-1.jpg', '../../images/goods-item-1.jpg'],
 					title: 'Клещи переставные Sparta 250 мм',
 					price: '150 ₽',
 					span: false,
 				},
 				{
-					images: ['../images/goods-item-1.jpg', '../images/goods-item-1.jpg', '../images/goods-item-1.jpg'],
+					images: ['../../images/goods-item-1.jpg', '../../images/goods-item-1.jpg', '../../images/goods-item-1.jpg'],
 					title: 'Клещи переставные Sparta 250 мм',
 					price: '150 ₽',
 					span: false,
 				},
 				{
-					images: ['../images/goods-item-1.jpg', '../images/goods-item-1.jpg', '../images/goods-item-1.jpg'],
+					images: ['../../images/goods-item-1.jpg', '../../images/goods-item-1.jpg', '../../images/goods-item-1.jpg'],
 					title: 'Клещи переставные Sparta 250 мм',
 					price: '150 ₽',
 					span: false,
 				},
 				{
-					images: ['../images/goods-item-1.jpg', '../images/goods-item-1.jpg', '../images/goods-item-1.jpg'],
+					images: ['../../images/goods-item-1.jpg', '../../images/goods-item-1.jpg', '../../images/goods-item-1.jpg'],
 					title: 'Клещи переставные Sparta 250 мм',
 					price: '150 ₽',
-					span: false,
+					span: true,
 				},
 				{
-					images: ['../images/goods-item-1.jpg', '../images/goods-item-1.jpg', '../images/goods-item-1.jpg'],
+					images: ['../../images/goods-item-1.jpg', '../../images/goods-item-1.jpg', '../../images/goods-item-1.jpg'],
 					title: 'Клещи переставные Sparta 250 мм',
 					price: '150 ₽',
 					span: false,
@@ -182,5 +186,9 @@ export default {
         display: grid;
         row-gap: 28px;
     }
+
+	&__pagination {
+		grid-column: 1 / -1;
+	}
 }
 </style>

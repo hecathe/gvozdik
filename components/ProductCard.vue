@@ -1,12 +1,18 @@
 <template>
 	<div class="product-card">
-		<swiper-container class="product-card__images" pagination="true" allow-touch-move="false" slides-per-view="1">
+		<swiper-container 
+			pagination="true" 
+			:allow-touch-move="$route.path.includes('catalog') ? true : false" slides-per-view="1" 
+			auto-height="true"
+		>
 			<swiper-slide v-for="(item, index) in card.images" :key="index">
 				<!-- <div class="hover-area"></div>
 				<div class="hover-area"></div>
 				<div class="hover-area"></div>
 				<div class="hover-area"></div> -->
-				<img class="product-card__img" :src="item" alt="">
+				<div class="product-card__images">
+					<img class="product-card__img" :src="item" alt="">
+				</div>
 			</swiper-slide>
 		</swiper-container>
 
@@ -34,12 +40,13 @@ export default {
 			type: Object,
 			default: () => { },
 		},
-	}
+	},
 }
 </script>
 
 <style lang="scss" scoped>
 .product-card {
+
 	.hover-area {
 		position: absolute;
 		width: 25%;
@@ -59,7 +66,7 @@ export default {
 	}
 
 	&__images {
-		max-height: 250px;
+		max-height: 550px;
 	}
 
 	&__img {

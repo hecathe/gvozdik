@@ -76,10 +76,10 @@ export default {
 				},
 			],
 			cards: [
-				"images/mastercard.png",
-				"images/visa.png",
-				"images/sbp.png",
-				"images/mir.png",
+				"../../images/mastercard.png",
+				"../../images/visa.png",
+				"../../images/sbp.png",
+				"../../images/mir.png",
 			],
 		};
 	},
