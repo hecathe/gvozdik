@@ -1,0 +1,1 @@
+import{_ as o,o as e,c as n,H as a,B as r}from"./CkZslKK8.js";const c={props:{isGhost:{type:Boolean,default:!1}}};function _(s,l,t,p,f,i){return e(),n("button",{class:r(["btn",{btn_ghost:t.isGhost}])},[a(s.$slots,"default")],2)}const d=o(c,[["render",_]]);export{d as _};
