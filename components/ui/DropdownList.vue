@@ -187,8 +187,8 @@ export default {
 		}
 
 		&__link {
-			display: flex;
-			align-items: center;
+			display: grid;
+			grid-template-columns: 24px 1fr;
 			column-gap: 8px;
 			font-size: 16px;
 			color: inherit;

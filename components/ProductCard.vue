@@ -17,7 +17,7 @@
 		</swiper-container>
 
 		<div class="product-card__info">
-			<nuxt-link class="product-card__text" to="#">
+			<nuxt-link class="product-card__text" :to="card.link">
 				<h3 class="product-card__title h3">{{ card.title }}</h3>
 				<span class="product-card__price">{{ card.price }}</span>
 			</nuxt-link>
@@ -108,17 +108,17 @@ export default {
 	}
 }
 
-swiper-container::part(bullet) {
-	background-color: $white;
-	opacity: 1;
-}
+// swiper-container::part(bullet) {
+// 	background-color: $white;
+// 	opacity: 1;
+// }
 
-swiper-container::part(bullet-active) {
-	width: 16px;
-	background-color: $white;
-	border-radius: 10px;
-	transition: width 150ms linear;
-}
+// swiper-container::part(bullet-active) {
+// 	width: 16px;
+// 	background-color: $white;
+// 	border-radius: 10px;
+// 	transition: width 150ms linear;
+// }
 
 // swiper-slide {
 // 	max-width: min-content;
