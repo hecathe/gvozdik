@@ -1,6 +1,0 @@
-const ProductCard_vue_vue_type_style_index_0_scoped_b73654ac_lang = ".product-card .hover-area[data-v-b73654ac]{height:100%;position:absolute;width:25%}.product-card .hover-area[data-v-b73654ac]:nth-of-type(2){left:25%}.product-card .hover-area[data-v-b73654ac]:nth-of-type(3){left:50%}.product-card .hover-area[data-v-b73654ac]:nth-of-type(4){left:75%}.product-card__images[data-v-b73654ac]{max-height:550px}.product-card__img[data-v-b73654ac]{height:100%;max-width:100%;-o-object-fit:cover;object-fit:cover;width:100%}.product-card__info[data-v-b73654ac]{display:grid;margin-top:16px;row-gap:20px}.product-card__text[data-v-b73654ac]{color:inherit;-moz-column-gap:20px;column-gap:20px;display:flex;justify-content:space-between;text-decoration:none}.product-card__text[data-v-b73654ac]:hover{color:#1076bf}.product-card__price[data-v-b73654ac]{font-size:22px;font-weight:700;line-height:120%;white-space:nowrap}.product-card__actions[data-v-b73654ac]{display:flex;justify-content:space-between}";
-
-const ProductCardStyles_9AuqriAg = [ProductCard_vue_vue_type_style_index_0_scoped_b73654ac_lang];
-
-export { ProductCardStyles_9AuqriAg as default };
-//# sourceMappingURL=ProductCard-styles.9AuqriAg.mjs.map

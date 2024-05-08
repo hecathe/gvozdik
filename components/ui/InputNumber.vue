@@ -38,11 +38,13 @@ export default {
 <style lang="scss" scoped>
 .number {
 	// width: max-content;
+	width: 100%;
 	display: flex;
 	background-color: $grey_m;
 
 	&__input {
-		width: 52px;
+		max-width: 60px;
+		// width: 52px;
 		height: 100%;
 		text-align: center;
 		background-color: $grey_m;
@@ -57,7 +59,8 @@ export default {
 	}
 
 	&__btn {
-		width: 52px;
+		flex: 1;
+		// width: 52px;
 		height: 100%;
 		display: flex;
 		justify-content: center;

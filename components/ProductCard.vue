@@ -104,7 +104,7 @@ export default {
 	&__actions {
 		display: flex;
 		justify-content: space-between;
-		// column-gap: 28px;
+		column-gap: 28px;
 	}
 }
 

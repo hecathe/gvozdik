@@ -1,24 +1,24 @@
 <template>
 	<ul class="product-info-list">
-		<li
-			class="product-info-list__item"
-			v-for="(item, index) in infoList"
-			:key="index"
-		>
+		<li class="product-info-list__item" v-for="(item, index) in infoList" :key="index">
 			<span>{{ item.key }}</span>
-			<span>{{ item.value }}</span>
+			<span :class="{bold: isBold}">{{ item.value }}</span>
 		</li>
 	</ul>
 </template>
 
 <script>
 export default {
-  props: {
-	infoList: {
-	  type: Array,
-	  default: "",
+	props: {
+		infoList: {
+			type: Array,
+			default: "",
+		},
+		isBold: {
+			type: Boolean,
+			default: false,
+		}
 	},
-  },
 };
 </script>
 
@@ -27,7 +27,7 @@ export default {
 	@include reset-list;
 	display: grid;
 	align-items: flex-start;
-    align-content: flex-start;
+	align-content: flex-start;
 	row-gap: 24px;
 	padding: 20px 0;
 
@@ -40,6 +40,12 @@ export default {
 		span {
 			display: block;
 			background-color: $white;
+			z-index: 2;
+
+			&.bold {
+				font-weight: 700;
+				font-size: 22px;
+			}
 		}
 
 		&::before {
@@ -49,7 +55,7 @@ export default {
 			bottom: 4px;
 			width: 100%;
 			border-bottom: 1px dashed #9E9E9E;
-			z-index: -1;
+			z-index: 1;
 		}
 	}
 }
