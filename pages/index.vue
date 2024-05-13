@@ -24,7 +24,7 @@
 
 		<main-accordion :acc-list="acc_list"></main-accordion>
 
-		<subscribe-form></subscribe-form>
+		<!-- <subscribe-form></subscribe-form> -->
 	</main>
 </template>
 

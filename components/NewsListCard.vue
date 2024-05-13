@@ -31,15 +31,17 @@ export default {
     align-items: flex-end;
     height: 400px;
     color: $white;
-    background: linear-gradient(180deg, rgba(40, 40, 40, 0.14) 0%, rgba(0, 0, 0, 0.7) 100%);
+    // background: linear-gradient(180deg, rgba(40, 40, 40, 0.14) 0%, rgba(0, 0, 0, 0.7) 100%);
     text-decoration: none;
     padding: 28px;
+	transition: transform 150ms linear;
 
     &__img {
         position: absolute;
         width: 100%;
         height: 100%;
         z-index: -1;
+		filter: brightness(0.5);
 
         img {
             width: 100%;
@@ -65,11 +67,12 @@ export default {
     //     overflow: hidden;
     // }
 
-    // &:hover {
-    //     #{$this}__text {
-    //         height: auto;
-    //         transform: translateY(0);
-    //     }
-    // }
+    &:hover {
+		transform: scale(1.05);
+        // #{$this}__text {
+        //     height: auto;
+        //     transform: translateY(0);
+        // }
+    }
 }
 </style>

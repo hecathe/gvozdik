@@ -8,7 +8,7 @@
 
 			<ul class="reviews-card__stars">
 				<li class="reviews-card__star" v-for="(star, index) in 5" :key="index">
-					<svg-icon name="star" width="20" height="20"></svg-icon>
+					<svg-icon name="star" width="20" height="20" fill="FFB422"></svg-icon>
 				</li>
 			</ul>
 		</div>
@@ -29,13 +29,25 @@
 		</div>
 
 		<div class="reviews-card__slider">
-			<swiper-container class="reviews-card__container" slides-per-view="6">
+			<swiper-container 
+				class="reviews-card__container" 
+				slides-per-view="6" 
+				space-between="20"
+				:navigation-prev-el="`.custom-prev-button-${reviewsCard.id}`"
+				:navigation-next-el="`.custom-next-button-${reviewsCard.id}`" 
+			>
 				<swiper-slide class="reviews-card__slide-item" v-for="(image, index) in reviewsCard.images" :key="index">
 					<div class="reviews-card__img">
 						<img :src="image" alt="">
 					</div>
 				</swiper-slide>
 			</swiper-container>
+			<div :class="`custom-button custom-prev-button custom-prev-button-${reviewsCard.id}`">
+				<svg-icon name="arrow-left" width="24" height="24"></svg-icon>
+			</div>
+			<div :class="`custom-button custom-next-button custom-next-button-${reviewsCard.id}`">
+				<svg-icon name="arrow-right" width="24" height="24"></svg-icon>
+			</div>
 		</div>
 		
 	</div>
@@ -49,14 +61,18 @@ export default {
 			default: () => {},
 		}
 	},
+	data() {
+		return {
+			id: this.reviewsCard.id,
+		}
+	},
 }
 </script>
 
 <style lang="scss" scoped>
 .reviews-card {
-	min-width: 0;
-	min-height: 0;
 	display: grid;
+	grid-template-columns: 100%;
 	row-gap: 20px;
 	background-color: $white;
 	box-shadow: 0 4px 20px rgba(40, 40, 40, 25%);
@@ -75,11 +91,53 @@ export default {
 	}
 
 	&__slider {
-		max-width: 100%;
-	}
-
-	&__img {
-		max-width: 100px;
+		position: relative;
 	}
 }
+
+.custom-button {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 1;
+	cursor: pointer;
+
+	&.swiper-button-disabled {
+		opacity: 0;
+	}
+
+	svg {
+		--currentColor: #{$white};
+		z-index: 2;
+	}
+
+	&::before {
+		position: absolute;
+		content: '';
+		top: -31px;
+		width: 87px;
+		height: 87px;
+		z-index: -1;
+	}
+}
+
+.custom-prev-button {
+	left: 24px;
+
+	&::before {
+		left: -24px;
+		background: linear-gradient(90deg, rgba(0,0,0,0.5), transparent);
+	}
+}
+
+.custom-next-button {
+	right: 24px;
+
+	&::before {
+		right: -24px;
+		background: linear-gradient(270deg, rgba(0,0,0,0.5), transparent);
+	}
+}
+
+
 </style>

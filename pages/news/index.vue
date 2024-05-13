@@ -32,7 +32,7 @@ export default {
                 {
                     title: 'Заголовок новости 1',
                     content: '<p>Задача организации, в особенности же убеждённость некоторых оппонентов, в своём классическом представлении, допускает внедрение как самодостаточных, так и внешне зависимых концептуальных решений.</p>',
-                    image: 'images/work-tools.jpg',
+                    image: '/gvozdik/images/work-tools.jpg',
                     date: '11/04/2024',
                     url: '/news/zagolovok-novosti-1/',
                     span: true,
@@ -40,7 +40,7 @@ export default {
                 {
                     title: 'Заголовок новости 2',
                     content: '<p>Задача организации, в особенности же убеждённость некоторых оппонентов, в своём классическом представлении, допускает внедрение как самодостаточных, так и внешне зависимых концептуальных решений.</p>',
-                    image: 'images/work-tools.jpg',
+                    image: '/gvozdik/images/work-tools.jpg',
                     date: '11/04/2024',
                     url: '/news/zagolovok-novosti-2/',
                     span: false,
@@ -48,7 +48,7 @@ export default {
                 {
                     title: 'Заголовок новости 3',
                     content: '<p>Задача организации, в особенности же убеждённость некоторых оппонентов, в своём классическом представлении, допускает внедрение как самодостаточных, так и внешне зависимых концептуальных решений.</p>',
-                    image: 'images/work-tools.jpg',
+                    image: '/gvozdik/images/work-tools.jpg',
                     date: '11/04/2024',
                     url: '/news/zagolovok-novosti-3/',
                     span: false,
@@ -56,7 +56,7 @@ export default {
                 {
                     title: 'Заголовок новости 4',
                     content: '<p>Задача организации, в особенности же убеждённость некоторых оппонентов, в своём классическом представлении, допускает внедрение как самодостаточных, так и внешне зависимых концептуальных решений.</p>',
-                    image: 'images/work-tools.jpg',
+                    image: '/gvozdik/images/work-tools.jpg',
                     date: '11/04/2024',
                     url: '/news/zagolovok-novosti-4/',
                     span: false,
@@ -64,7 +64,7 @@ export default {
                 {
                     title: 'Заголовок новости 5',
                     content: '<p>Задача организации, в особенности же убеждённость некоторых оппонентов, в своём классическом представлении, допускает внедрение как самодостаточных, так и внешне зависимых концептуальных решений.</p>',
-                    image: 'images/work-tools.jpg',
+                    image: '/gvozdik/images/work-tools.jpg',
                     date: '11/04/2024',
                     url: '/news/zagolovok-novosti-5/',
                     span: false,
@@ -72,7 +72,7 @@ export default {
                 {
                     title: 'Заголовок новости 6',
                     content: '<p>Задача организации, в особенности же убеждённость некоторых оппонентов, в своём классическом представлении, допускает внедрение как самодостаточных, так и внешне зависимых концептуальных решений.</p>',
-                    image: 'images/work-tools.jpg',
+                    image: '/gvozdik/images/work-tools.jpg',
                     date: '11/04/2024',
                     url: '/news/zagolovok-novosti-6/',
                     span: false,
@@ -80,7 +80,7 @@ export default {
                 {
                     title: 'Заголовок новости 7',
                     content: '<p>Задача организации, в особенности же убеждённость некоторых оппонентов, в своём классическом представлении, допускает внедрение как самодостаточных, так и внешне зависимых концептуальных решений.</p>',
-                    image: 'images/work-tools.jpg',
+                    image: '/gvozdik/images/work-tools.jpg',
                     date: '11/04/2024',
                     url: '/news/zagolovok-novosti-7/',
                     span: true,

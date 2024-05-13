@@ -1,7 +1,7 @@
 <template>
 	<ul class="user-actions">
 		<li class="user-actions__item" v-for="(item, index) in userActions" :key="index">
-			<nuxt-link class="user-actions__link" to="#">
+			<nuxt-link class="user-actions__link" :to="item.link">
 				<svg-icon :name="item.name" width="24" height="24"></svg-icon>
 			</nuxt-link>
 		</li>

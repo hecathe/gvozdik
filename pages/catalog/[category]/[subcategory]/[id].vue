@@ -22,7 +22,16 @@
 			</div>
 
 			<app-tabs :tabs="tabs"></app-tabs>
+		</the-section>
 
+		<the-section>
+			<app-title link link-text="все акции">Товары по акции / Популярное</app-title>
+			<product-slider :cards="saleCards"></product-slider>
+		</the-section>
+
+		<the-section>
+			<app-title link link-text="все новинки">Новинки</app-title>
+			<product-slider :cards="newCards"></product-slider>
 		</the-section>
 	</main>
 </template>
@@ -145,6 +154,7 @@ export default {
 				]},
 				{ id: 3, title: 'Отзывы', content: [
 					{
+						id: 1,
 						name: 'Имя пользователя',
 						date: '12.12.2024',
 						advantages: {
@@ -171,6 +181,7 @@ export default {
 						]
 					},
 					{
+						id: 2,
 						name: 'Имя пользователя',
 						date: '12.12.2024',
 						advantages: {
@@ -195,7 +206,9 @@ export default {
 							'/gvozdik/images/goods-item-1.jpg',
 							'/gvozdik/images/goods-item-1.jpg',
 						]
-					},{
+					},
+					{
+						id: 3,
 						name: 'Имя пользователя',
 						date: '12.12.2024',
 						advantages: {
@@ -222,7 +235,71 @@ export default {
 						]
 					}
 				]}
-			]
+			],
+			saleCards: [
+				{
+					images: ['/gvozdik/images/goods-item-1.jpg', '/gvozdik/images/goods-item-1.jpg', '/gvozdik/images/goods-item-1.jpg'],
+					title: 'Клещи переставные Sparta 250 мм',
+					price: '150 ₽',
+					link: '/catalog/tools/handtools/kleshi-sparta-250mm/',
+				},
+				{
+					images: ['/gvozdik/images/goods-item-1.jpg', '/gvozdik/images/goods-item-1.jpg', '/gvozdik/images/goods-item-1.jpg'],
+					title: 'Клещи переставные Sparta 250 мм',
+					price: '150 ₽',
+					link: '/catalog/tools/handtools/kleshi-sparta-250mm/',
+				},
+				{
+					images: ['/gvozdik/images/goods-item-1.jpg', '/gvozdik/images/goods-item-1.jpg', '/gvozdik/images/goods-item-1.jpg'],
+					title: 'Клещи переставные Sparta 250 мм',
+					price: '150 ₽',
+					link: '/catalog/tools/handtools/kleshi-sparta-250mm/',
+				},
+				{
+					images: ['/gvozdik/images/goods-item-1.jpg', '/gvozdik/images/goods-item-1.jpg', '/gvozdik/images/goods-item-1.jpg'],
+					title: 'Клещи переставные Sparta 250 мм',
+					price: '150 ₽',
+					link: '/catalog/tools/handtools/kleshi-sparta-250mm/',
+				},
+				{
+					images: ['/gvozdik/images/goods-item-1.jpg', '/gvozdik/images/goods-item-1.jpg', '/gvozdik/images/goods-item-1.jpg'],
+					title: 'Клещи переставные Sparta 250 мм',
+					price: '150 ₽',
+					link: '/catalog/tools/handtools/kleshi-sparta-250mm/',
+				},
+			],
+			newCards: [
+				{
+					images: ['/gvozdik/images/goods-item-1.jpg', '/gvozdik/images/goods-item-1.jpg', '/gvozdik/images/goods-item-1.jpg'],
+					title: 'Клещи переставные Sparta 250 мм',
+					price: '150 ₽',
+					link: '/catalog/tools/handtools/kleshi-sparta-250mm/',
+				},
+				{
+					images: ['/gvozdik/images/goods-item-1.jpg', '/gvozdik/images/goods-item-1.jpg', '/gvozdik/images/goods-item-1.jpg'],
+					title: 'Клещи переставные Sparta 250 мм',
+					price: '150 ₽',
+					link: '/catalog/tools/handtools/kleshi-sparta-250mm/',
+				},
+				{
+					images: ['/gvozdik/images/goods-item-1.jpg', '/gvozdik/images/goods-item-1.jpg', '/gvozdik/images/goods-item-1.jpg'],
+					title: 'Клещи переставные Sparta 250 мм',
+					price: '150 ₽',
+					link: '/catalog/tools/electrotools/kleshi-sparta-250mm/',
+				},
+				{
+					images: ['/gvozdik/images/goods-item-1.jpg', '/gvozdik/images/goods-item-1.jpg', '/gvozdik/images/goods-item-1.jpg'],
+					title: 'Клещи переставные Sparta 250 мм',
+					price: '150 ₽',
+					link: '/catalog/tools/handtools/kleshi-sparta-250mm/',
+				},
+				{
+					images: ['/gvozdik/images/goods-item-1.jpg', '/gvozdik/images/goods-item-1.jpg', '/gvozdik/images/goods-item-1.jpg'],
+					title: 'Клещи переставные Sparta 250 мм',
+					price: '150 ₽',
+					link: '/catalog/tools/electrotools/kleshi-sparta-250mm/',
+				},
+			],
 		};
 	},
 };

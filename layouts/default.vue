@@ -6,6 +6,7 @@
 	></AppHeader>
 	<!-- <AppMenu></AppMenu> -->
 	<slot />
+	<subscribe-form></subscribe-form>
 	<AppFooter
 		:nav-list="catalog_nav"
 		:footer-menu="menu"
@@ -45,6 +46,7 @@ export default {
 				},
 				{
 				name: "cart",
+				link: "/cart",
 				},
 			],
 			catalog_nav: [
@@ -76,10 +78,10 @@ export default {
 				},
 			],
 			cards: [
-				"../../images/mastercard.png",
-				"../../images/visa.png",
-				"../../images/sbp.png",
-				"../../images/mir.png",
+				"/gvozdik/images/mastercard.png",
+				"/gvozdik/images/visa.png",
+				"/gvozdik/images/sbp.png",
+				"/gvozdik/images/mir.png",
 			],
 		};
 	},
