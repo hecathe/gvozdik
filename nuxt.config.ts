@@ -15,7 +15,9 @@ export default defineNuxtConfig({
       },
     ],
     "@nuxtjs/svg-sprite",
+    // "vue-yandex-maps/nuxt",
   ],
+  plugins: [{ src: "~/plugins/yandex-map", mode: "client" }],
   vite: {
     css: {
       preprocessorOptions: {
@@ -26,11 +28,14 @@ export default defineNuxtConfig({
       },
     },
     vue: {
-        template: {
-            compilerOptions: {
-              isCustomElement: (tag) => tag.startsWith('swiper-')
-            }
-        }
-    }
+      template: {
+        compilerOptions: {
+          isCustomElement: (tag) => tag.startsWith("swiper-"),
+        },
+      },
+    },
   },
+  //   yandexMaps: {
+  //     apikey: '3298e558-aff8-4488-95dc-510505f05ade',
+  //   },
 });

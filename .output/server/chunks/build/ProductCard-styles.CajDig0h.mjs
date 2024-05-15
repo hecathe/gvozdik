@@ -1,0 +1,6 @@
+const ProductCard_vue_vue_type_style_index_0_scoped_e7eeee95_lang = ".product-card .hover-area[data-v-e7eeee95]{height:100%;position:absolute;width:25%}.product-card .hover-area[data-v-e7eeee95]:nth-of-type(2){left:25%}.product-card .hover-area[data-v-e7eeee95]:nth-of-type(3){left:50%}.product-card .hover-area[data-v-e7eeee95]:nth-of-type(4){left:75%}.product-card__images[data-v-e7eeee95]{max-height:550px}.product-card__img[data-v-e7eeee95]{height:100%;max-width:100%;-o-object-fit:cover;object-fit:cover;width:100%}.product-card__info[data-v-e7eeee95]{display:grid;margin-top:16px;row-gap:20px}.product-card__text[data-v-e7eeee95]{color:inherit;-moz-column-gap:20px;column-gap:20px;display:flex;justify-content:space-between;text-decoration:none}.product-card__text[data-v-e7eeee95]:hover{color:#1076bf}.product-card__price[data-v-e7eeee95]{font-size:22px;font-weight:700;line-height:120%;white-space:nowrap}.product-card__actions[data-v-e7eeee95]{-moz-column-gap:28px;column-gap:28px;display:flex;justify-content:space-between;max-width:310px}";
+
+const ProductCardStyles_CajDig0h = [ProductCard_vue_vue_type_style_index_0_scoped_e7eeee95_lang];
+
+export { ProductCardStyles_CajDig0h as default };
+//# sourceMappingURL=ProductCard-styles.CajDig0h.mjs.map

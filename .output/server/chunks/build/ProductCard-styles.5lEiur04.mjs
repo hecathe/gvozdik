@@ -1,6 +1,0 @@
-const ProductCard_vue_vue_type_style_index_0_scoped_ce3dac80_lang = ".product-card .hover-area[data-v-ce3dac80]{height:100%;position:absolute;width:25%}.product-card .hover-area[data-v-ce3dac80]:nth-of-type(2){left:25%}.product-card .hover-area[data-v-ce3dac80]:nth-of-type(3){left:50%}.product-card .hover-area[data-v-ce3dac80]:nth-of-type(4){left:75%}.product-card__images[data-v-ce3dac80]{max-height:550px}.product-card__img[data-v-ce3dac80]{height:100%;max-width:100%;-o-object-fit:cover;object-fit:cover;width:100%}.product-card__info[data-v-ce3dac80]{display:grid;margin-top:16px;row-gap:20px}.product-card__text[data-v-ce3dac80]{color:inherit;-moz-column-gap:20px;column-gap:20px;display:flex;justify-content:space-between;text-decoration:none}.product-card__text[data-v-ce3dac80]:hover{color:#1076bf}.product-card__price[data-v-ce3dac80]{font-size:22px;font-weight:700;line-height:120%;white-space:nowrap}.product-card__actions[data-v-ce3dac80]{-moz-column-gap:28px;column-gap:28px;display:flex;justify-content:space-between}";
-
-const ProductCardStyles_5lEiur04 = [ProductCard_vue_vue_type_style_index_0_scoped_ce3dac80_lang];
-
-export { ProductCardStyles_5lEiur04 as default };
-//# sourceMappingURL=ProductCard-styles.5lEiur04.mjs.map

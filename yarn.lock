@@ -5504,6 +5504,11 @@ vue-virtual-scroller@2.0.0-beta.8:
     vue-observe-visibility "^2.0.0-alpha.1"
     vue-resize "^2.0.0-alpha.1"
 
+vue-yandex-maps@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/vue-yandex-maps/-/vue-yandex-maps-1.1.0.tgz#51087ed68b506509ed839cbfe8e3c0db9d2389c8"
+  integrity sha512-pYgjEl8BRCkwK2BPF23/OwHD9Yk58wp2t0WSAHa+hKbb1JyMpbDTgVFXD4+7BkzGk6YpQT6zu1BV4aXOcyoJhQ==
+
 vue@^3.4.21:
   version "3.4.21"
   resolved "https://registry.yarnpkg.com/vue/-/vue-3.4.21.tgz#69ec30e267d358ee3a0ce16612ba89e00aaeb731"

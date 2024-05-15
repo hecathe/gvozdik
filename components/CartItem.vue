@@ -21,7 +21,11 @@
 			</div>
 		</div>
 		
-
+		<div class="cart-item__block">
+			<ui-input-number></ui-input-number>
+			<p class="cart-item__price">{{ cartItem.price }}</p>
+			<p class="cart-item__sum">{{ cartItem.summary }} ₽</p>
+		</div>
 	</div>
 </template>
 
@@ -81,6 +85,19 @@ export default {
 				--currentColor: #{$mainRed};
 			}
 		}
+	}
+
+	&__block {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		row-gap: 12px;
+	}
+
+	&__sum {
+		font-size: 26px;
+		line-height: 120%;
+		font-weight: 700;
 	}
 }
 </style>

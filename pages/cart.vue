@@ -1,7 +1,7 @@
 <template>
 	<main class="main">
 		<the-section class="cart">
-			<nuxt-link to="#">
+			<nuxt-link class="cart__link" to="/catalog/">
 				<svg-icon name="arrow-left" width="24" height="24"></svg-icon>
 				Вернуться к покупкам
 			</nuxt-link>
@@ -15,7 +15,12 @@
 					</li>
 				</ul>
 
-				<product-side-bar></product-side-bar>
+				<product-side-bar 
+					:side-info-list="product_info" 
+					:summary="summary" 
+					:delivery="delivery" 
+					:show="false"
+				></product-side-bar>
 			</div>
         </the-section>
 	</main>
@@ -31,9 +36,48 @@ export default {
 					title: 'Клещи переставные Sparta 250 мм',
 					article: '123456',
 					weight: '300 г',
-					price: 150,
+					price: '150 ₽ / шт.',
+					summary: 300,
 				},
-			]
+				{
+					img: '/gvozdik/images/drill.jpg',
+					title: 'Клещи переставные Sparta 250 мм',
+					article: '123456',
+					weight: '300 г',
+					price: '150 ₽ / шт.',
+					summary: 300,
+				},
+				{
+					img: '/gvozdik/images/drill.jpg',
+					title: 'Клещи переставные Sparta 250 мм',
+					article: '123456',
+					weight: '300 г',
+					price: '150 ₽ / шт.',
+					summary: 300,
+				},
+			],
+			product_info: [
+				{
+					key: 'Цена',
+					value: '150 ₽',
+				},
+				{
+					key: 'Доставка',
+					value: '140 ₽',
+				},
+				{
+					key: 'Скидка',
+					value: '10 ₽',
+				},
+			],
+			summary: {
+				key: 'Итого',
+				value: '290 ₽'
+			},
+			delivery: {
+				key: 'Доставка',
+				value: '28.03.2024',
+			},
 		}
 	},
 }
@@ -44,11 +88,32 @@ export default {
 	&__content {
 		display: grid;
 		grid-template-columns: 1fr minmax(auto, 310px);
-		column-gap: 60px
+		column-gap: 60px;
+		align-items: flex-start
 	}
 
 	&__list {
 		@include reset-list;
+		display: grid;
+		row-gap: 24px;
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+		column-gap: 12px;
+		font-weight: 700;
+		color: #757575;
+		text-decoration: none;
+		margin-bottom: 40px;
+
+		&:hover {
+			color: $mainBlue;
+
+			svg {
+				--currentColor: #{$mainBlue};
+			}
+		}
 	}
 }
 </style>

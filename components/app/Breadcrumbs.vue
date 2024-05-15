@@ -57,7 +57,7 @@ export default {
       font-weight: 700;
     }
 
-    &:hover {
+    &:hover:not(.active) {
         color: $mainBlue;
     }
   }

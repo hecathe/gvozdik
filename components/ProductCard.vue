@@ -102,6 +102,7 @@ export default {
 	}
 
 	&__actions {
+		max-width: 310px;
 		display: flex;
 		justify-content: space-between;
 		column-gap: 28px;

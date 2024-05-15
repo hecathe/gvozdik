@@ -1,18 +1,16 @@
 <template>
     <div class="menu">
         <div class="container">
-            <ul class="menu__aside">
-                <li v-for="(item, index) in asideMenu" :key="index">
-                    <nuxt-link :to="item.url">{{ item.name }}</nuxt-link>
-                </li>
-            </ul>
+			<div class="menu__wrap">
+				<app-menu-aside-list :aside-list="asideMenu"></app-menu-aside-list>
 
-            <div>
-                <h2>Инструмент</h2>
-                <ul>
-                    
-                </ul>
-            </div>
+				<div>
+					<h2>Инструмент</h2>
+					<ul>
+						
+					</ul>
+				</div>
+			</div>
         </div>
     </div>
 </template>
@@ -28,8 +26,19 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .menu {
     position: absolute;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: $white;
+	z-index: 10;
+
+	&__wrap {
+		display: flex;
+		column-gap: 60px;
+		padding: 60px 0;
+	}
 }
 </style>

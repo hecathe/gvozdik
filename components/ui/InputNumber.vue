@@ -39,6 +39,7 @@ export default {
 .number {
 	// width: max-content;
 	width: 100%;
+	min-height: 52px;
 	display: flex;
 	background-color: $grey_m;
 
@@ -65,6 +66,7 @@ export default {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		padding: 10px;
 
 		&:hover {
 			background-color: $grey;

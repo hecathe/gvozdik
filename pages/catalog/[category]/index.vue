@@ -72,17 +72,17 @@ export default {
                 {
                     name: 'Ручной инструмент',
                     url: '/catalog/tools/handtools/',
-                    icon: 'lucide_brick-wall',
+                    icon: 'brick-wall',
                 },
                 {
                     name: 'Электроинструмент',
                     url: '/catalog/tools/electrotools/',
-                    icon: 'material-symbols_construction-rounded',
+                    icon: 'construction-rounded',
                 },
                 {
                     name: 'Измерительные инструменты',
                     url: '/catalog/tools/checktools/',
-                    icon: 'icon-park-outline_power-supply-one',
+                    icon: 'power-supply',
                 },
             ],
             type: [

@@ -13,8 +13,12 @@
 
 			<div class="header__bottom">
 				<div class="header__wrap">
-					<button @click="isMenuOpen = !isMenuOpen" class="header__catalog-btn">
-						<svg-icon width="24" height="24" name="more-grid"></svg-icon>
+					<button @click="toggleMenu" class="header__catalog-btn">
+						<svg-icon 
+							:name="isMenuOpen ? 'close' : 'more-grid'"
+							width="24" 
+							height="24" 
+						></svg-icon>
 						<span>Каталог</span>
 					</button>
 					<UiInputSearch></UiInputSearch>
@@ -23,7 +27,11 @@
 				<AppHeaderUserActions :user-actions="userActions"></AppHeaderUserActions>
 			</div>
 
-			<AppMenu v-if="isMenuOpen"></AppMenu>
+			<AppMenu 
+				v-if="isMenuOpen" 
+				:aside-menu="asideMenu"
+				@close-menu="toggleMenu"
+			></AppMenu>
 		</div>
 	</header>
 </template>
@@ -38,11 +46,22 @@ export default {
 		userActions: {
 			type: Array,
 			default: () => [],
+		},
+		asideMenu: {
+			type: Array,
+			default: () => [],
 		}
 	},
+
 	data() {
 		return {
 			isMenuOpen: false,
+		}
+	},
+
+	methods: {
+		toggleMenu() {
+			this.isMenuOpen = !this.isMenuOpen
 		}
 	},
 }
@@ -98,6 +117,10 @@ export default {
 		border-radius: 10px;
 		padding: 12px;
 		transition: background 150ms linear;
+
+		svg {
+			--currentColor: #{$white};
+		}
 
 		&:hover {
 			background-color: $darkBlue;

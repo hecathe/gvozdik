@@ -7,7 +7,7 @@
 		</div>
 
 		<div class="product-sidebar__buttons">
-			<div class="product-sidebar__btn-wrap">
+			<div v-if="show" class="product-sidebar__btn-wrap">
 				<ui-input-number></ui-input-number>
 				<ui-button-like></ui-button-like>
 			</div>
@@ -35,6 +35,10 @@ export default {
 			type: Object,
 			default: () => {},
 		},
+		show: {
+			type: Boolean,
+			default: true,
+		}
 	},
 }
 </script>

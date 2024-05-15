@@ -3,6 +3,7 @@
 	<AppHeader
 		:nav-list="menu"
 		:user-actions="user_menu"
+		:aside-menu="aside_menu"
 	></AppHeader>
 	<!-- <AppMenu></AppMenu> -->
 	<slot />
@@ -22,7 +23,7 @@ export default {
 			menu: [
 				{
 					name: "Новости",
-					link: "/news"
+					link: "/news/"
 				},
 				{
 					name: "О компании",
@@ -30,11 +31,11 @@ export default {
 				},
 				{
 					name: "Доставка",
-					link: "#",
+					link: "/delivery/",
 				},
 				{
 					name: "Контакты",
-					link: "#",
+					link: "/contacts/",
 				},
 			],
 			user_menu: [
@@ -50,31 +51,67 @@ export default {
 				},
 			],
 			catalog_nav: [
-				"Электрика",
-				"Инструмент",
-				"Сантехника",
-				"Стройматериалы",
-				"Электрика",
-				"Инструмент",
-				"Сантехника",
-				"Стройматериалы",
-				"Электрика",
-				"Инструмент",
-				"Сантехника",
-				"Стройматериалы",
+				{
+					title: "Электрика",
+					link: '/catalog/electric',
+				},
+				{
+					title: "Инструмент",
+					link: '/catalog/tools',
+				},
+				{
+					title: "Сантехника",
+					link: '/catalog/tools',
+				},
+				{
+					title: "Стройматериалы",
+					link: '/catalog/tools',
+				},
+				{
+					title: "Электрика",
+					link: '/catalog/tools',
+				},
+				{
+					title: "Инструмент",
+					link: '/catalog/tools',
+				},
+				{
+					title: "Сантехника",
+					link: '/catalog/tools',
+				},
+				{
+					title: "Стройматериалы",
+					link: '/catalog/tools',
+				},
+				{
+					title: "Электрика",
+					link: '/catalog/tools',
+				},
+				{
+					title: "Инструмент",
+					link: '/catalog/tools',
+				},
+				{
+					title: "Сантехника",
+					link: '/catalog/tools',
+				},
+				{
+					title: "Стройматериалы",
+					link: '/catalog/tools',
+				}
 			],
 			social: [
 				{
-				whatsapp: "#",
+					whatsapp: "#",
 				},
 				{
-				telegram: "#",
+					telegram: "#",
 				},
 				{
-				youtube: "#",
+					youtube: "#",
 				},
 				{
-				vk: "#",
+					vk: "#",
 				},
 			],
 			cards: [
@@ -83,6 +120,43 @@ export default {
 				"/gvozdik/images/sbp.png",
 				"/gvozdik/images/mir.png",
 			],
+			aside_menu: [
+				{
+					title: 'Стройматериалы',
+					link: '/catalog/building',
+					svg_name: 'brick-wall',
+				},
+				{
+					title: 'Инструмент',
+					link: '/catalog/tools',
+					svg_name: 'construction-rounded',
+				},
+				{
+					title: 'Электрика',
+					link: '/catalog/electric',
+					svg_name: 'brick-wall',
+				},
+				{
+					title: 'Крепёж',
+					link: '/catalog/nails',
+					svg_name: 'screw',
+				},
+				{
+					title: 'Инженерные системы',
+					link: '/catalog/pipelines',
+					svg_name: 'pipeline',
+				},
+				{
+					title: 'Сантехника',
+					link: '/catalog/baths',
+					svg_name: 'bath',
+				},
+				{
+					title: 'Товары для дома',
+					link: '/catalog/brick-wall',
+					svg_name: 'brick-wall',
+				},
+			]
 		};
 	},
 };

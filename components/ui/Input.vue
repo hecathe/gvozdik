@@ -4,8 +4,8 @@
 		<input 
 			:type="type" 
 			:id="id" 
-			v-model="value" 
 			:placeholder="placeholder" 
+			v-model="value" 
 			class="input__field" 
 		>
 	</div>

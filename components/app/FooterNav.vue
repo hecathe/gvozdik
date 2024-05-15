@@ -1,7 +1,7 @@
 <template>
 	<ul class="footer-nav">
 		<li class="footer-nav__item" v-for="(item, index) in navList" :key="index">
-			<nuxt-link class="footer-nav__link" to="#">{{ item }}</nuxt-link>
+			<nuxt-link class="footer-nav__link" :to="item.link">{{ item.title }}</nuxt-link>
 		</li>
 	</ul>
 </template>

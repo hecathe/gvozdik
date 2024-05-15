@@ -5,11 +5,14 @@
   fill="none"
   xmlns="http://www.w3.org/2000/svg"
 >
-  <path
-    d="M16 16L12 12M12 12L8 8M12 12L16 8M12 12L8 16"
-    stroke="white"
-    stroke-width="2"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-  />
+  <g id="Menu / Close_MD">
+    <path
+      id="Vector"
+      d="M18 18L12 12M12 12L6 6M12 12L18 6M12 12L6 18"
+      stroke="var(--currentColor, #595959)"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </g>
 </svg>
