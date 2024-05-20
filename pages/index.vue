@@ -8,23 +8,15 @@
 			<catalog-nav :catalog-nav="catalogNav"></catalog-nav>
 		</the-section>
 
-		<the-section>
-			<app-title link link-text="все акции">Товары по акции / Популярное</app-title>
-			<product-slider :cards="saleCards"></product-slider>
-		</the-section>
+		<product-slider-section :slider-list="saleCards">Популярное</product-slider-section>
 
-		<the-section>
-			<app-title link link-text="все новинки">Новинки</app-title>
-			<product-slider :cards="newCards"></product-slider>
-		</the-section>
+		<product-slider-section :slider-list="newCards">Новинки</product-slider-section>
 
 		<main-about-company></main-about-company>
 
 		<main-news :news-list="news"></main-news>
 
 		<main-accordion :acc-list="acc_list"></main-accordion>
-
-		<!-- <subscribe-form></subscribe-form> -->
 	</main>
 </template>
 
@@ -157,19 +149,16 @@ export default {
 					image: 'images/work-tools.jpg',
 					title: 'Заголовок новости',
 					text: '<p>Задача организации, в особенности же убеждённость некоторых оппонентов, в своём классическом представлении, допускает внедрение как самодостаточных, так и внешне зависимых концептуальных решений.</p><p>Задача организации, в особенности же убеждённость некоторых оппонентов, в своём классическом представлении, допускает внедрение как самодостаточных, так и внешне зависимых концептуальных решений.</p>',
-					img_left: true,
 				},
 				{
 					image: 'images/work-tools.jpg',
 					title: 'Заголовок новости',
 					text: '<p>Задача организации, в особенности же убеждённость некоторых оппонентов, в своём классическом представлении, допускает внедрение как самодостаточных, так и внешне зависимых концептуальных решений.</p>',
-					img_left: false,
 				},
 				{
 					image: 'images/work-tools.jpg',
 					title: 'Заголовок новости',
 					text: '<p>Задача организации, в особенности же убеждённость некоторых оппонентов, в своём классическом представлении, допускает внедрение как самодостаточных, так и внешне зависимых концептуальных решений.</p>',
-					img_left: true,
 				},
 			],
 			acc_list: [

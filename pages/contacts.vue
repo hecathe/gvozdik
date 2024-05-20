@@ -183,4 +183,34 @@ export default {
 		margin-top: 60px;
 	}
 }
+
+@media screen and (max-width: 767px) {
+	.contacts {
+		&__map-wrap {
+			display: flex;
+			flex-direction: column-reverse;
+			row-gap: 28px;
+			padding: 0;
+		}
+
+		&__map {
+			position: static;
+		}
+
+		&__sidebar {
+			width: 100%;
+		}
+	}
+
+	.contacts-form {
+		&__wrap {
+			flex-direction: column;
+			row-gap: 28px;
+		}
+
+		&__img {
+			position: static;
+		}
+	}
+}
 </style>

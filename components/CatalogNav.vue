@@ -23,4 +23,16 @@ export default {
 	row-gap: 20px;
 	@include reset-list;
 }
+
+@media screen and (max-width: 1279px) {
+	.catalog-nav-list {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.catalog-nav-list {
+		grid-template-columns: 1fr;
+	}
+}
 </style>

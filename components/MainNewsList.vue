@@ -1,8 +1,6 @@
 <template>
 	<ul class="main-news-list">
-		<li class="main-news-list__item" v-for="(newsItem, index) in newsList" :key="index">
-			<main-news-card :news-card="newsItem"></main-news-card>
-		</li>
+		<main-news-card class="main-news-list__item" v-for="(newsItem, index) in newsList" :key="index" :news-card="newsItem"></main-news-card>
 	</ul>
 </template>
 
@@ -23,4 +21,10 @@ export default {
 	row-gap: 40px;
 	@include reset-list;
 }
+
+// @media screen and (max-width: 767px) {
+// 	.main-news-list {
+
+// 	}
+// }
 </style>

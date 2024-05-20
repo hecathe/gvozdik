@@ -1,8 +1,8 @@
 <template>
-	<nav class="nav">
-		<ul class="nav__list">
-			<li class="nav__item" v-for="(navItem, index) in navList" :key="index">
-				<nuxt-link class="nav__link" :to="navItem.link">{{ navItem.name }}</nuxt-link>
+	<nav class="header-nav">
+		<ul class="header-nav__list">
+			<li class="header-nav__item" v-for="(navItem, index) in navList" :key="index">
+				<nuxt-link class="header-nav__link" :to="navItem.link">{{ navItem.name }}</nuxt-link>
 			</li>
 		</ul>
 	</nav>
@@ -20,7 +20,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.nav {
+.header-nav {
 	&__list {
 		display: flex;
 		column-gap: 40px;

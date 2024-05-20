@@ -5,10 +5,10 @@
 			v-for="(item, index) in asideList" 
 			:key="index"
 		>
-			<nuxt-link 
+			<button 
 				class="menu-aside-list__link"
-				:to="item.link"
-				@click="clickHandler"
+				:class="{active: activeTab === item.id}"
+				@click="selectCategory(item)"
 			>
 				<svg-icon 
 					class="menu-aside-list__icon"
@@ -18,13 +18,12 @@
 				></svg-icon>
 
 				{{ item.title }}
-			</nuxt-link>
+			</button>
 		</li>
 	</ul>
 </template>
 
 <script>
-// изменить переменную isMenuOpen в прародителе Хэдэр
 export default {
 	props: {
 		asideList: {
@@ -32,9 +31,24 @@ export default {
 			default: () => [],
 		}
 	},
+	emits: ['checked-category'],
+	data() {
+		return {
+			activeTab: 1,
+		}
+	},
+	// watch: {
+	// 	'activeTab': function(newActiveTab) {
+	// 		this.activeTab = newActiveTab;
+	// 	}
+	// },
+	beforeMount() {
+		this.selectCategory;
+	},
 	methods: {
-		clickHandler() {
-			this.$emit('toggle-menu');
+		selectCategory(item) {
+			this.activeTab = item.id;
+			this.$emit('checked-category', item.title);
 		}
 	},
 }
@@ -42,10 +56,14 @@ export default {
 
 <style lang="scss" scoped>
 .menu-aside-list {
+	position: sticky;
+	top: 20px;
 	display: grid;
+	row-gap: 4px;
 	@include reset-list;
 
 	&__link {
+		width: 100%;
 		display: flex;
 		// align-items: center;
 		column-gap: 8px;
@@ -58,6 +76,15 @@ export default {
 		&:hover {
 			// color: $mainBlue;
 			background-color: $grey_m;
+		}
+
+		&.active {
+			color: $white;
+			background-color: $mainBlue;
+
+			svg {
+				--currentColor: #{$white};
+			}
 		}
 	}
 }

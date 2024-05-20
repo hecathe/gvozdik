@@ -13,7 +13,7 @@
 
 <style lang="scss" scoped>
 .notice {
-	background-color: $mainOrange;
+	background-color: $mainBlue;
 
 	&__wrap {
 		position: relative;
@@ -37,6 +37,10 @@
 		justify-content: center;
 		align-items: center;
 		transform: translateY(-50%);
+
+		svg {
+			--currentColor: #{$white};
+		}
 	}
 }
 </style>

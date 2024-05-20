@@ -3,6 +3,7 @@
 		<button
 		class="drop-down__btn"
 		@click="isOpen = !isOpen"
+		type="button"
 		>
 			<span>{{ title }}</span>
 			
@@ -137,7 +138,7 @@ export default {
 
 	data() {
 		return {
-			isOpen: true,
+			isOpen: false,
 			checked: false,
 		};
 	},

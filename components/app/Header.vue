@@ -6,6 +6,10 @@
 					<svg-icon name="logo" width="121" height="64"></svg-icon>
 				</nuxt-link>
 
+				<button class="header__burger">
+					<svg-icon name="burger" width="28" height="28"></svg-icon>
+				</button>
+
 				<AppHeaderNav :nav-list="navList"></AppHeaderNav>
 
 				<a class="header__phone" href="tel:8 800 555 55 55">8 800 555 55 55</a>
@@ -29,8 +33,7 @@
 
 			<AppMenu 
 				v-if="isMenuOpen" 
-				:aside-menu="asideMenu"
-				@close-menu="toggleMenu"
+				:catalog-menu="catalogMenu"
 			></AppMenu>
 		</div>
 	</header>
@@ -47,10 +50,11 @@ export default {
 			type: Array,
 			default: () => [],
 		},
-		asideMenu: {
+		catalogMenu: {
 			type: Array,
 			default: () => [],
-		}
+		},
+
 	},
 
 	data() {
@@ -61,7 +65,9 @@ export default {
 
 	methods: {
 		toggleMenu() {
-			this.isMenuOpen = !this.isMenuOpen
+			this.isMenuOpen = !this.isMenuOpen;
+
+			this.isMenuOpen ? document.body.style.overflow = 'hidden' : document.body.style.overflow = '';
 		}
 	},
 }
@@ -69,6 +75,10 @@ export default {
 
 <style lang="scss" scoped>
 .header {
+	&__burger {
+		display: none;
+	}
+
 	&__top {
 		display: flex;
 		justify-content: space-between;
@@ -124,6 +134,26 @@ export default {
 
 		&:hover {
 			background-color: $darkBlue;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.header {
+		&__burger {
+			display: block;
+		}
+
+		&-nav {
+			display: none;
+		}
+
+		&__phone {
+			display: none;
+		}
+
+		&__bottom {
+			display: none;
 		}
 	}
 }

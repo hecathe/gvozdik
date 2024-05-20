@@ -106,4 +106,25 @@ export default {
 		row-gap: 20px;
 	}
 }
+
+@media screen and (max-width: 767px) {
+	.tabs {
+		&__list {
+			overflow-x: auto;
+		}
+
+		&__btn {
+			padding: 20px;
+		}
+
+		&__reviews {
+			min-width: 0;
+			min-height: 0;
+			width: 100%;
+			display: flex;
+			flex-direction: column-reverse;
+			row-gap: 40px;
+		}
+	}
+}
 </style>

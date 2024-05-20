@@ -59,6 +59,7 @@ export default {
 
 <style lang="scss" scoped>
 .footer {
+	$this: &;
 	background-color: $grey;
 
 	&__top {
@@ -109,6 +110,33 @@ export default {
 		grid-template-columns: 1fr 1fr;
 		border-top: 1px solid $mainBlack;
 		padding: 28px 0;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.footer {
+		$this: &;
+		
+		&__top {
+			flex-direction: column;
+    		row-gap: 20px;
+			padding: 40px 0;
+		}
+
+		&__bottom {
+			display: flex;
+			flex-direction: column-reverse;
+			row-gap: 20px;
+
+			&__block {
+				&:first-child {
+					flex-direction: column-reverse;
+					align-items: center;
+				}
+			}
+		}
+
+		
 	}
 }
 </style>

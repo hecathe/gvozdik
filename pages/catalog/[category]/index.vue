@@ -4,7 +4,7 @@
 
         <the-section class="catalog-category">
             <div class="catalog-category__wrap">
-                <div class="catalog-category__aside">
+                <aside class="catalog-category__aside">
 					<div class="catalog-category__filter">
 						<ui-dropdown-list title="Категория" :list="category" is-link="true" show-more></ui-dropdown-list>
 
@@ -23,7 +23,7 @@
 							<svg-icon name="trash" width="24" height="24"></svg-icon>
 						</ui-button> -->
 					</div>
-                </div>
+                </aside>
 
 				<div class="catalog-category__grid">
 					<product-grid :product-list="products"></product-grid>
@@ -35,15 +35,9 @@
             </div>
         </the-section>
 
-		<the-section>
-			<app-title link link-text="все акции">Товары по акции / Популярное</app-title>
-			<product-slider :cards="saleCards"></product-slider>
-		</the-section>
+		<product-slider-section :slider-list="saleCards">Популярное</product-slider-section>
 
-		<the-section>
-			<app-title link link-text="все новинки">Новинки</app-title>
-			<product-slider :cards="newCards"></product-slider>
-		</the-section>
+		<product-slider-section :slider-list="newCards">Новинки</product-slider-section>
     </main>
 </template>
 
@@ -273,6 +267,15 @@ export default {
 
 	&__pagination {
 		grid-column: 1 / -1;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.catalog-category {
+		&__wrap {
+			grid-template-columns: 100%;
+			row-gap: 28px;
+		}
 	}
 }
 </style>

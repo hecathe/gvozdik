@@ -41,4 +41,17 @@
 		row-gap: 16px;
 	}
 }
+
+@media screen and (max-width: 767px) {
+	.subscribe {
+		&__content {
+			grid-template-columns: 1fr;
+			row-gap: 24px;
+		}
+
+		&__text {
+			row-gap: 12px;
+		}
+	}
+}
 </style>

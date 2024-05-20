@@ -5,7 +5,8 @@
         <the-section class="catalog-category">
             <div class="catalog-category__wrap">
                 <div class="catalog-category__aside">
-					<form class="catalog-category__filter">
+					<!-- /* form */ -->
+					<div class="catalog-category__filter">
 						<ui-dropdown-list title="Категория" :list="category" is-link="true"></ui-dropdown-list>
 
 						<ui-dropdown-list title="Тип продукта" :list="type" is-input-checkbox="true"></ui-dropdown-list>
@@ -22,7 +23,7 @@
 							<span>Очистить фильтр</span>
 							<svg-icon name="trash" width="24" height="24"></svg-icon>
 						</ui-button>
-					</form>
+					</div>
                 </div>
 
 				<div class="catalog-category__grid">
@@ -278,6 +279,15 @@ export default {
 
 	&__pagination {
 		grid-column: 1 / -1;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.catalog-category {
+		&__wrap {
+			grid-template-columns: 100%;
+			row-gap: 28px;
+		}
 	}
 }
 </style>

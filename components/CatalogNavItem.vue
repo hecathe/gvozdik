@@ -83,4 +83,20 @@ export default {
 		object-fit: cover;
 	}
 }
+
+@media screen and (max-width: 1279px) {
+	.catalog-nav-item {
+		&.span-2 {
+			grid-column: 1 / -1;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.catalog-nav-item {
+		&.span-2 {
+			grid-column: span 1;
+		}
+	}
+}
 </style>

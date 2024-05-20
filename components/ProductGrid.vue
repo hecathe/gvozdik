@@ -33,4 +33,30 @@ export default {
 		}
 	}
 }
+
+@media screen and (max-width: 1279px) {
+	.product-grid {
+		grid-template-columns: repeat(2, 1fr);
+		// row-gap: 36px;
+
+		&__item {
+			&.span-2 {
+				grid-column: span 1;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.product-grid {
+		grid-template-columns: repeat(1, 100%);
+		row-gap: 36px;
+
+		&__item {
+			&.span-2 {
+				grid-column: span 1;
+			}
+		}
+	}
+}
 </style>

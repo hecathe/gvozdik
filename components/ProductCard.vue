@@ -1,20 +1,22 @@
 <template>
 	<div class="product-card">
-		<swiper-container 
-			pagination="true" 
-			:allow-touch-move="$route.path.includes('catalog') ? true : false" slides-per-view="1" 
-			auto-height="true"
-		>
-			<swiper-slide v-for="(item, index) in card.images" :key="index">
-				<!-- <div class="hover-area"></div>
-				<div class="hover-area"></div>
-				<div class="hover-area"></div>
-				<div class="hover-area"></div> -->
-				<div class="product-card__images">
-					<img class="product-card__img" :src="item" alt="">
-				</div>
-			</swiper-slide>
-		</swiper-container>
+		<div class="product-card__slider">
+			<swiper-container 
+				pagination="true" 
+				:allow-touch-move="$route.path.includes('catalog') ? true : false" slides-per-view="1" 
+				auto-height="true"
+			>
+				<swiper-slide v-for="(item, index) in card.images" :key="index">
+					<!-- <div class="hover-area"></div>
+					<div class="hover-area"></div>
+					<div class="hover-area"></div>
+					<div class="hover-area"></div> -->
+					<div class="product-card__images">
+						<img class="product-card__img" :src="item" alt="">
+					</div>
+				</swiper-slide>
+			</swiper-container>
+		</div>
 
 		<div class="product-card__info">
 			<nuxt-link class="product-card__text" :to="card.link">
@@ -124,4 +126,12 @@ export default {
 // swiper-slide {
 // 	max-width: min-content;
 // }
+
+@media screen and (max-width: 767px) {
+	.product-card {
+		&__actions {
+			max-width: 100%;
+		}
+	}
+}
 </style>

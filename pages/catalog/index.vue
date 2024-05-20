@@ -6,15 +6,9 @@
             <catalog-nav :catalog-nav="catalogNav"></catalog-nav>
         </the-section>
 
-        <the-section>
-			<app-title link link-text="все акции">Товары по акции / Популярное</app-title>
-			<product-slider :cards="saleCards"></product-slider>
-		</the-section>
+        <product-slider-section :slider-list="saleCards">Популярное</product-slider-section>
 
-		<the-section>
-			<app-title link link-text="все новинки">Новинки</app-title>
-			<product-slider :cards="newCards"></product-slider>
-		</the-section>
+		<product-slider-section :slider-list="newCards">Новинки</product-slider-section>
     </main>
 </template>
 

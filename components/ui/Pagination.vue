@@ -57,4 +57,13 @@ export default {
         }
     }
 }
+
+@media screen and (max-width: 767px) {
+	.pagination {
+		width: 100%;
+		flex-direction: column-reverse;
+		row-gap: 24px;
+		margin-top: 20px;
+	}
+}
 </style>

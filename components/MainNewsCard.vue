@@ -1,5 +1,5 @@
 <template>
-	<div v-if="newsCard.img_left" class="main-news-card">
+	<li class="main-news-card">
 		<div class="main-news-card__img">
 			<img :src="newsCard.image" alt="">
 		</div>
@@ -9,19 +9,7 @@
 			<div v-html="newsCard.text" class="main-news-card__text"></div>
 			<nuxt-link class="main-news-card__link" to="#">Подробнее</nuxt-link>
 		</div>
-	</div>
-
-	<div v-else class="main-news-card">
-		<div class="main-news-card__content">
-			<h3 class="main-news-card__title">{{ newsCard.title }}</h3>
-			<div v-html="newsCard.text"  class="main-news-card__text"></div>
-			<nuxt-link class="main-news-card__link" to="#">Подробнее</nuxt-link>
-		</div>
-
-		<div class="main-news-card__img">
-			<img :src="newsCard.image" alt="">
-		</div>
-	</div>
+	</li>
 </template>
 
 <script>
@@ -31,10 +19,6 @@ export default {
 			type: Object,
 			default: () => {},
 		},
-		isImgLeft: {
-			type: Boolean,
-			default: false,
-		}
 	}
 }
 </script>
@@ -45,6 +29,10 @@ export default {
 	grid-template-columns: 1fr 1fr;
 	align-items: center;
 	column-gap: 60px;
+
+	&:nth-child(2n) {
+		direction: rtl;
+	}
 
 	&__img {
 		height: 400px;
@@ -58,8 +46,12 @@ export default {
 
 	&__content {
 		display: grid;
-		justify-items: start;
 		row-gap: 40px;
+	}
+
+	&__title {
+		font-size: 28px;
+		line-height: 120%;
 	}
 
 	&__text {
@@ -79,6 +71,20 @@ export default {
 			text-decoration: none;
 		}
 	}
-	
+}
+
+@media screen and (max-width: 767px) {
+	.main-news-card {
+		grid-template-columns: 1fr;
+		row-gap: 24px;
+
+		&__content {
+			row-gap: 20px;
+		}
+
+		&__img {
+			height: 300px;
+		}
+	}
 }
 </style>

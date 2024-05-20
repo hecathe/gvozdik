@@ -60,4 +60,26 @@ swiper-container::part(button-prev) {
 	left: calc(100vw - 620px - 50%);
 	color: $white;
 }
+
+@media screen and (max-width: 767px) {
+	.main-slider {
+		&__text {
+			height: 350px;
+			padding: 40px;
+		}
+
+		&__title {
+			font-size: 36px;
+		}
+	}
+
+	swiper-container::part(button-next) {
+		right: 12px;
+		height: 30px;
+	}
+	swiper-container::part(button-prev) {
+		left: 12px;
+		height: 30px;
+	}
+}
 </style>

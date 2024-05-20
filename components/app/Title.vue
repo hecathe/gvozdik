@@ -65,4 +65,17 @@ export default {
 		}
 	}
 }
+
+@media screen and (max-width: 767px) {
+	.title {
+		flex-direction: column;
+		align-items: flex-start;
+		row-gap: 20px;
+		margin-bottom: 24px;
+
+		&__h2 {
+			font-size: 32px;
+		}
+	}
+}
 </style>

@@ -24,4 +24,10 @@ export default {
 .section {
 	margin-bottom: 120px;
 }
+
+@media screen and (max-width: 767px) {
+	.section {
+		margin-bottom: 80px;
+	}
+}
 </style>

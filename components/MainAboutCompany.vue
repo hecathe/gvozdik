@@ -41,13 +41,24 @@
 	}
 
 	&__img {
-		width: 590px;
-		height: 500px;
+		max-width: 590px;
+		max-height: 500px;
+		width: 100%;
+		height: 100%;
 
 		img {
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.about-company {
+		&__content {
+			grid-template-columns: 1fr;
+			row-gap: 40px;
 		}
 	}
 }

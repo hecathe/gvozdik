@@ -328,4 +328,12 @@ export default {
 		}
 	}
 }
+
+@media screen and (max-width: 767px) {
+	.product-section {
+		&__wrap {
+			grid-template-columns: 100%;
+		}
+	}
+}
 </style>
