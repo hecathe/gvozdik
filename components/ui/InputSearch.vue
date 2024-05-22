@@ -10,6 +10,7 @@
 	position: relative;
 
 	&__input {
+		width: 100%;
 		font-size: 20px;
 		line-height: 120%;
 		background-color: $grey_m;

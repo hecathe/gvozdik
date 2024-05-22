@@ -1,5 +1,5 @@
 <template>
-	<main>
+	<main class="main">
 		<the-section class="main-slider" wide>
 			<main-slider :main-slides="slides"></main-slider>
 		</the-section>
@@ -179,3 +179,15 @@ export default {
 	},
 }
 </script>
+
+<style lang="scss" scoped>
+.main {
+	padding-top: 0;
+}
+
+@media screen and (max-width: 767px) {
+	.main {
+		padding-top: 118px;
+	}
+}
+</style>

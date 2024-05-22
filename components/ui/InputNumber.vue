@@ -39,8 +39,9 @@ export default {
 .number {
 	// width: max-content;
 	width: 100%;
-	min-height: 52px;
+	// min-height: 52px;
 	display: flex;
+	align-items: center;
 	background-color: $grey_m;
 
 	&__input {

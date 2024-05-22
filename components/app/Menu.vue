@@ -9,7 +9,7 @@
 						v-for="(catalogMenuItem, index) in catalogMenu" 
 						:key="index"
 					>
-						<div class="menu__content" v-if="catalogMenuItem.title === activeContent">
+						<div class="menu__content" v-if="catalogMenuItem.id === activeContent">
 							<nuxt-link class="menu__title h2" :to="catalogMenuItem.link">{{ catalogMenuItem.title }}</nuxt-link>
 							
 							<div class="menu__blocks">
@@ -39,7 +39,7 @@ export default {
 	
 	data() {
 		return {
-			activeContent: '',
+			activeContent: 1,
 		}
 	},
 	methods: {
@@ -89,6 +89,20 @@ export default {
 		grid-template-columns: repeat(3, 1fr);
 		column-gap: 24px;
 		row-gap: 40px;
+	}
+
+	&::-webkit-scrollbar {
+		width: 12px;
+	}
+
+	&::-webkit-scrollbar-track {
+		background-color: #FAFAFA;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: $mainOrange;
+		border-radius: 10px;
+		border: 2px solid #FAFAFA;
 	}
 }
 </style>

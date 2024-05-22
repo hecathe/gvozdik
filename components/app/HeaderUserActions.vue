@@ -22,6 +22,7 @@ export default {
 <style lang="scss" scoped>
 .user-actions {
 	display: flex;
+	justify-content: center;
 	column-gap: 20px;
 
 	@include reset-list;

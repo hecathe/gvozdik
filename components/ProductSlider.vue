@@ -2,8 +2,10 @@
 	<div class="swiper">
 		<swiper-container 
 			class="product-slider" 
-			slides-per-view="1"
 			:breakpoints="{
+				0: {
+					slidesPerView: 1,
+				},
 				500: {
 					slidesPerView: 2,
 				},

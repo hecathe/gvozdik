@@ -31,12 +31,23 @@
 		<div class="reviews-card__slider">
 			<swiper-container 
 				class="reviews-card__container" 
-				slides-per-view="6" 
-				space-between="20"
+				:breakpoints="{
+					0: {
+						slidesPerView: 3,
+					},
+					500: {
+						slidesPerView: 4,
+					},
+					1280: {
+						slidesPerView: 6,
+					},
+				}" 
+				space-between="20" 
 				:navigation-prev-el="`.custom-prev-button-${reviewsCard.id}`"
-				:navigation-next-el="`.custom-next-button-${reviewsCard.id}`" 
+				:navigation-next-el="`.custom-next-button-${reviewsCard.id}`"
 			>
-				<swiper-slide class="reviews-card__slide-item" v-for="(image, index) in reviewsCard.images" :key="index">
+				<swiper-slide class="reviews-card__slide-item" v-for="(image, index) in reviewsCard.images"
+					:key="index">
 					<div class="reviews-card__img">
 						<img :src="image" alt="">
 					</div>
@@ -49,7 +60,7 @@
 				<svg-icon name="arrow-right" width="24" height="24"></svg-icon>
 			</div>
 		</div>
-		
+
 	</div>
 </template>
 
@@ -58,7 +69,7 @@ export default {
 	props: {
 		reviewsCard: {
 			type: Object,
-			default: () => {},
+			default: () => { },
 		}
 	},
 	data() {
@@ -93,12 +104,22 @@ export default {
 	&__slider {
 		position: relative;
 	}
+
+	&__img {
+		display: flex;
+
+		img {
+			width: 100%;
+		}
+	}
 }
 
 .custom-button {
 	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
+	top: 0;
+	bottom: 0;
+	display: flex;
+	align-items: center;
 	z-index: 1;
 	cursor: pointer;
 
@@ -114,9 +135,9 @@ export default {
 	&::before {
 		position: absolute;
 		content: '';
-		top: -31px;
-		width: 87px;
-		height: 87px;
+		top: 0;
+		width: 150%;
+		height: 100%;
 		z-index: -1;
 	}
 }
@@ -126,7 +147,7 @@ export default {
 
 	&::before {
 		left: -24px;
-		background: linear-gradient(90deg, rgba(0,0,0,0.5), transparent);
+		background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), transparent);
 	}
 }
 
@@ -135,9 +156,7 @@ export default {
 
 	&::before {
 		right: -24px;
-		background: linear-gradient(270deg, rgba(0,0,0,0.5), transparent);
+		background: linear-gradient(270deg, rgba(0, 0, 0, 0.5), transparent);
 	}
 }
-
-
 </style>

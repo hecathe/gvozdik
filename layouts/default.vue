@@ -1,11 +1,12 @@
 <template>
-	<Notice></Notice>
-	<AppHeader
-		:nav-list="menu"
-		:user-actions="user_menu"
-		:catalog-menu="catalog_menu"
-	></AppHeader>
-	<!-- <AppMenu></AppMenu> -->
+	<div class="top">
+		<Notice></Notice>
+		<AppHeader
+			:nav-list="menu"
+			:user-actions="user_menu"
+			:catalog-menu="catalog_menu"
+		></AppHeader>
+	</div>
 	<slot />
 	<subscribe-form></subscribe-form>
 	<AppFooter
@@ -129,35 +130,35 @@ export default {
 					lists: [
 						{
 							title: 'Ручной инструмент',
-							link: '/catalog/handtools/',
+							link: '/catalog/tools/handtools/',
 							list: [
 								{
 									label: 'Наборы инструментов',
-									link: '/catalog/nabory-instrimentov/'
+									link: '/catalog/tools/nabory-instrimentov/'
 								},
 								{
 									label: 'Ударно-рычажный инструмент',
-									link: '/catalog/udarno-rychagnoy-instrument/'
+									link: '/catalog/tools/udarno-rychagnoy-instrument/'
 								},
 								{
 									label: 'Режущий инструмент',
-									link: '/catalog/rezuchii-instrument/'
+									link: '/catalog/tools/rezuchii-instrument/'
 								},
 								{
 									label: 'Инструмент садовый',
-									link: '/catalog/instrument-sadoviy/'
+									link: '/catalog/tools/instrument-sadoviy/'
 								},
 								{
 									label: 'Зажимные инструменты и устройства',
-									link: '/catalog/zazhimnie-instrumenty/'
+									link: '/catalog/tools/zazhimnie-instrumenty/'
 								},
 								{
 									label: 'Монтажный и крепежный инструмент',
-									link: '/catalog/montazniy-krepezhniy-instrument/'
+									link: '/catalog/tools/montazniy-krepezhniy-instrument/'
 								},
 								{
 									label: 'Столярно-слесарный инструмент',
-									link: '/catalog/stolyarno-slesarniy-instrument/'
+									link: '/catalog/tools/stolyarno-slesarniy-instrument/'
 								},
 							]
 						},
@@ -167,31 +168,31 @@ export default {
 							list: [
 								{
 									label: 'Наборы инструментов',
-									link: '/catalog/nabory-instrimentov/'
+									link: '/catalog/tools/nabory-instrimentov/'
 								},
 								{
 									label: 'Ударно-рычажный инструмент',
-									link: '/catalog/udarno-rychagnoy-instrument/'
+									link: '/catalog/tools/udarno-rychagnoy-instrument/'
 								},
 								{
 									label: 'Режущий инструмент',
-									link: '/catalog/rezuchii-instrument/'
+									link: '/catalog/tools/rezuchii-instrument/'
 								},
 								{
 									label: 'Инструмент садовый',
-									link: '/catalog/instrument-sadoviy/'
+									link: '/catalog/tools/instrument-sadoviy/'
 								},
 								{
 									label: 'Зажимные инструменты и устройства',
-									link: '/catalog/zazhimnie-instrumenty/'
+									link: '/catalog/tools/zazhimnie-instrumenty/'
 								},
 								{
 									label: 'Монтажный и крепежный инструмент',
-									link: '/catalog/montazniy-krepezhniy-instrument/'
+									link: '/catalog/tools/montazniy-krepezhniy-instrument/'
 								},
 								{
 									label: 'Столярно-слесарный инструмент',
-									link: '/catalog/stolyarno-slesarniy-instrument/'
+									link: '/catalog/tools/stolyarno-slesarniy-instrument/'
 								},
 							],
 						},
@@ -201,31 +202,31 @@ export default {
 							list: [
 								{
 									label: 'Наборы инструментов',
-									link: '/catalog/nabory-instrimentov/'
+									link: '/catalog/tools/nabory-instrimentov/'
 								},
 								{
 									label: 'Ударно-рычажный инструмент',
-									link: '/catalog/udarno-rychagnoy-instrument/'
+									link: '/catalog/tools/udarno-rychagnoy-instrument/'
 								},
 								{
 									label: 'Режущий инструмент',
-									link: '/catalog/rezuchii-instrument/'
+									link: '/catalog/tools/rezuchii-instrument/'
 								},
 								{
 									label: 'Инструмент садовый',
-									link: '/catalog/instrument-sadoviy/'
+									link: '/catalog/tools/instrument-sadoviy/'
 								},
 								{
 									label: 'Зажимные инструменты и устройства',
-									link: '/catalog/zazhimnie-instrumenty/'
+									link: '/catalog/tools/zazhimnie-instrumenty/'
 								},
 								{
 									label: 'Монтажный и крепежный инструмент',
-									link: '/catalog/montazniy-krepezhniy-instrument/'
+									link: '/catalog/tools/montazniy-krepezhniy-instrument/'
 								},
 								{
 									label: 'Столярно-слесарный инструмент',
-									link: '/catalog/stolyarno-slesarniy-instrument/'
+									link: '/catalog/tools/stolyarno-slesarniy-instrument/'
 								},
 							]
 						},
@@ -235,49 +236,49 @@ export default {
 							list: [
 								{
 									label: 'Наборы инструментов',
-									link: '/catalog/nabory-instrimentov/'
+									link: '/catalog/tools/nabory-instrimentov/'
 								},
 								{
 									label: 'Ударно-рычажный инструмент',
-									link: '/catalog/udarno-rychagnoy-instrument/'
+									link: '/catalog/tools/udarno-rychagnoy-instrument/'
 								},
 								{
 									label: 'Режущий инструмент',
-									link: '/catalog/rezuchii-instrument/'
+									link: '/catalog/tools/rezuchii-instrument/'
 								},
 								{
 									label: 'Инструмент садовый',
-									link: '/catalog/instrument-sadoviy/'
+									link: '/catalog/tools/instrument-sadoviy/'
 								},
 								{
 									label: 'Зажимные инструменты и устройства',
-									link: '/catalog/zazhimnie-instrumenty/'
+									link: '/catalog/tools/zazhimnie-instrumenty/'
 								},
 								{
 									label: 'Монтажный и крепежный инструмент',
-									link: '/catalog/montazniy-krepezhniy-instrument/'
+									link: '/catalog/tools/montazniy-krepezhniy-instrument/'
 								},
 								{
 									label: 'Столярно-слесарный инструмент',
-									link: '/catalog/stolyarno-slesarniy-instrument/'
+									link: '/catalog/tools/stolyarno-slesarniy-instrument/'
 								},
 							],
 						},
 						{
 							title: 'Ручной инструмент',
-							link: '/catalog/handtools/',
+							link: '/catalog/tools/handtools/',
 							list: [
 								{
 									label: 'Наборы инструментов',
-									link: '/catalog/nabory-instrimentov/'
+									link: '/catalog/tools/nabory-instrimentov/'
 								},
 								{
 									label: 'Ударно-рычажный инструмент',
-									link: '/catalog/udarno-rychagnoy-instrument/'
+									link: '/catalog/tools/udarno-rychagnoy-instrument/'
 								},
 								{
 									label: 'Режущий инструмент',
-									link: '/catalog/rezuchii-instrument/'
+									link: '/catalog/tools/rezuchii-instrument/'
 								},
 								{
 									label: 'Инструмент садовый',
@@ -299,7 +300,7 @@ export default {
 						},
 						{
 							title: 'Измерительные инструменты',
-							link: '/catalog/izmeritelnie-instrumenty/',
+							link: '/catalog/tools/izmeritelnie-instrumenty/',
 							list: [
 								{
 									label: 'Наборы инструментов',
@@ -341,7 +342,7 @@ export default {
 					lists: [
 						{
 							title: 'Ручной инструмент',
-							link: '/catalog/handtools/',
+							link: '/catalog/tools/handtools/',
 							list: [
 								{
 									label: 'Наборы инструментов',
@@ -1602,3 +1603,14 @@ export default {
 	},
 };
 </script>
+
+<style lang="scss" scoped>
+@media screen and (max-width: 767px) {
+	.top {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 2;
+	}
+}
+</style>

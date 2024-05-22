@@ -1,6 +1,0 @@
-const Tabs_vue_vue_type_style_index_0_scoped_e9728c2a_lang = ".product-info-list[data-v-e9728c2a]{-moz-column-gap:60px;column-gap:60px;display:grid;grid-auto-flow:column;grid-template-rows:repeat(6,max-content)}.tabs[data-v-e9728c2a]{display:grid;row-gap:40px}.tabs__list[data-v-e9728c2a]{border-bottom:1px solid #1076bf;display:flex;list-style:none;margin:0;padding:0}.tabs__btn[data-v-e9728c2a]{align-items:center;display:flex;justify-content:center;padding:28px}.tabs__btn.active[data-v-e9728c2a]{border-bottom:4px solid #21b1ff}.tabs__reviews[data-v-e9728c2a]{-moz-column-gap:100px;column-gap:100px;display:grid;grid-template-columns:minmax(auto,700px) 1fr;min-height:0;min-width:0}.tabs__reviews-btns[data-v-e9728c2a]{align-content:flex-start;display:grid;flex:1;row-gap:20px}@media screen and (max-width:767px){.tabs__list[data-v-e9728c2a]{overflow-x:auto}.tabs__btn[data-v-e9728c2a]{padding:20px}.tabs__reviews[data-v-e9728c2a]{display:flex;flex-direction:column-reverse;min-height:0;min-width:0;row-gap:40px;width:100%}}";
-
-const TabsStyles__VneY_yp = [Tabs_vue_vue_type_style_index_0_scoped_e9728c2a_lang];
-
-export { TabsStyles__VneY_yp as default };
-//# sourceMappingURL=Tabs-styles._VneY_yp.mjs.map

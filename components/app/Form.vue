@@ -62,4 +62,12 @@ export default {
 		}
 	}
 }
+
+@media screen and (max-width: 767px) {
+	.form {
+		&__list {
+			grid-template-columns: 1fr;
+		}
+	}
+}
 </style>

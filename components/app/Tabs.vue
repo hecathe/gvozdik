@@ -68,10 +68,12 @@ export default {
 	grid-template-rows: repeat(6, max-content);
 	grid-auto-flow: column;
 	column-gap: 60px;
+	padding: 0;
 }
 
 .tabs {
 	display: grid;
+	grid-template-columns: 100%;
 	row-gap: 40px;
 
 	&__list {
@@ -125,6 +127,10 @@ export default {
 			flex-direction: column-reverse;
 			row-gap: 40px;
 		}
+	}
+
+	.product-info-list {
+		grid-auto-flow: row;
 	}
 }
 </style>

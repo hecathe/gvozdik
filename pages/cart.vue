@@ -116,4 +116,13 @@ export default {
 		}
 	}
 }
+
+@media screen and (max-width: 767px) {
+	.cart {
+		&__content {
+			grid-template-columns: 1fr;
+			row-gap: 40px;
+		}
+	}
+}
 </style>

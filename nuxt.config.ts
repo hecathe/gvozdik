@@ -2,6 +2,10 @@
 export default defineNuxtConfig({
   app: {
     baseURL: "/gvozdik/",
+	head: {
+		charset: 'utf-8',
+		viewport: 'width=device-width, initial-scale=1',
+	}
   },
   css: ["normalize.css/normalize.css", "~/assets/styles/main.scss"],
   devtools: { enabled: true },

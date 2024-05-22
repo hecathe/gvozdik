@@ -1,6 +1,9 @@
 <template>
 	<nav class="header-nav">
 		<ul class="header-nav__list">
+			<li class="header-nav__item header-nav__item_catalog">
+				<nuxt-link class="header-nav__link" to="/catalog/">Каталог</nuxt-link>
+			</li>
 			<li class="header-nav__item" v-for="(navItem, index) in navList" :key="index">
 				<nuxt-link class="header-nav__link" :to="navItem.link">{{ navItem.name }}</nuxt-link>
 			</li>
@@ -27,8 +30,15 @@ export default {
 		@include reset-list;
 	}
 
+	&__item {
+		&_catalog {
+			display: none;
+		}
+	}
+
 	&__link {
 		position: relative;
+		display: flex;
 		font-size: 20px;
 		font-weight: 500;
 		color: $mainBlack;
@@ -50,6 +60,32 @@ export default {
 		&:hover {
 			&::after {
 				width: 100%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	.header-nav {
+		&__list {
+			column-gap: 24px;
+		}
+
+		&__link {
+			font-size: 18px;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.header-nav {
+		&__list {
+			flex-direction: column;
+		}
+
+		&__item {
+			&_catalog {
+				display: block;
 			}
 		}
 	}

@@ -170,6 +170,7 @@ export default {
 		// max-height: 100%;
 		position: relative;
 		width: 100%;
+		overflow: hidden;
 
 		img {
 			position: absolute;
@@ -195,10 +196,16 @@ export default {
 
 		&__map {
 			position: static;
+			height: 300px;
 		}
 
 		&__sidebar {
 			width: 100%;
+			row-gap: 24px;
+		}
+
+		&__link {
+			font-size: 18px;
 		}
 	}
 
@@ -209,7 +216,7 @@ export default {
 		}
 
 		&__img {
-			position: static;
+			height: 350px;
 		}
 	}
 }

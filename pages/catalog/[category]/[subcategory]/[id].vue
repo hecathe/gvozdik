@@ -333,6 +333,11 @@ export default {
 	.product-section {
 		&__wrap {
 			grid-template-columns: 100%;
+			row-gap: 24px;
+		}
+
+		&__img {
+			max-width: 100%;
 		}
 	}
 }

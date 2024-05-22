@@ -32,15 +32,21 @@ export default {
     }
 }
 
-@media screen and (max-width: 767px) {
-    .news-list {
-        grid-template-columns: 1fr;
+@media screen and (max-width: 1279px) {
+	.news-list {
+        grid-template-columns: 1fr 1fr;
 
-        &__item {
+		&__item {
             &.span-2 {
                 grid-column: span 1;
             }
         }
+	}
+}
+
+@media screen and (max-width: 767px) {
+    .news-list {
+        grid-template-columns: 1fr;
     }
 }
 </style>

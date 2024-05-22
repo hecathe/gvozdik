@@ -34,7 +34,9 @@ export default {
 
   &__list {
     display: flex;
+	flex-wrap: wrap;
     column-gap: 32px;
+	row-gap: 8px;
     @include reset-list;
   }
 

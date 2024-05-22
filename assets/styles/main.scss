@@ -103,3 +103,25 @@ swiper-container::part(bullet-active) {
 	border-radius: 10px;
 	transition: width 150ms linear;
 }
+
+@media screen and (max-width: 767px) {
+	.h1 {
+		font-size: 32px;
+		line-height: 120%;
+		margin-bottom: 24px;
+	}
+	
+	.h2 {
+		font-size: 28px;
+		line-height: 120%;
+	}
+	
+	.h3 {
+		font-size: 18px;
+		line-height: 110%;
+	}
+
+	.main {
+		padding-top: 130px;
+	}
+}

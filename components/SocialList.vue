@@ -49,6 +49,7 @@ export default {
 	$this: &;
 
 	display: flex;
+	flex-wrap: wrap;
 	column-gap: 12px;
 	row-gap: 12px;
 	@include reset-list;
@@ -78,6 +79,14 @@ export default {
 
 	svg {
 		--currentColor: #{$white};
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.social-list {
+		&.vertical {
+			flex-direction: row;
+		}
 	}
 }
 </style>

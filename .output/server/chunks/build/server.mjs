@@ -646,7 +646,7 @@ const _routes = [
     meta: { ...{}, ...{ "layout": "svg-sprite" } },
     alias: [],
     redirect: void 0 ,
-    component: () => import('./icons-page-BEAUcdPH.mjs').then((m) => m.default || m)
+    component: () => import('./icons-page-BKXxF7gT.mjs').then((m) => m.default || m)
   },
   {
     name: "cart",
@@ -654,7 +654,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./cart-BzS8817D.mjs').then((m) => m.default || m)
+    component: () => import('./cart-SmWzpkdX.mjs').then((m) => m.default || m)
   },
   {
     name: "catalog-category-subcategory-id",
@@ -662,7 +662,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_id_-gx4rBtY2.mjs').then((m) => m.default || m)
+    component: () => import('./_id_-DD4AjZXD.mjs').then((m) => m.default || m)
   },
   {
     name: "catalog-category-subcategory",
@@ -670,7 +670,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./index-DNlibPqM.mjs').then((m) => m.default || m)
+    component: () => import('./index-D_dQlicw.mjs').then((m) => m.default || m)
   },
   {
     name: "catalog-category",
@@ -678,7 +678,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./index-C3L6Qmp3.mjs').then((m) => m.default || m)
+    component: () => import('./index-2oC3LEpq.mjs').then((m) => m.default || m)
   },
   {
     name: "catalog",
@@ -686,7 +686,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./index-BbQTKk1-.mjs').then((m) => m.default || m)
+    component: () => import('./index-DIyLXmzx.mjs').then((m) => m.default || m)
   },
   {
     name: "contacts",
@@ -694,7 +694,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./contacts-CdCTVudW.mjs').then((m) => m.default || m)
+    component: () => import('./contacts-BtlzrN3W.mjs').then((m) => m.default || m)
   },
   {
     name: "delivery",
@@ -702,7 +702,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./delivery-DTeny23S.mjs').then((m) => m.default || m)
+    component: () => import('./delivery-Bl1DaWF5.mjs').then((m) => m.default || m)
   },
   {
     name: "index",
@@ -710,7 +710,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./index-BUfl9Bml.mjs').then((m) => m.default || m)
+    component: () => import('./index-wrAEpJkC.mjs').then((m) => m.default || m)
   },
   {
     name: "news-id",
@@ -718,7 +718,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_id_-BwP5FxDf.mjs').then((m) => m.default || m)
+    component: () => import('./_id_-p_2c_vrR.mjs').then((m) => m.default || m)
   },
   {
     name: "news",
@@ -726,7 +726,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./index-B_7UdWRU.mjs').then((m) => m.default || m)
+    component: () => import('./index-eMeIWW8S.mjs').then((m) => m.default || m)
   }
 ];
 const _wrapIf = (component, props, slots) => {
@@ -1039,7 +1039,7 @@ const revive_payload_server_eJ33V7gbc6 = /* @__PURE__ */ defineNuxtPlugin({
     }
   }
 });
-const LazySvgIcon = defineAsyncComponent(() => import('./svg-icon-CbNtY1Rj.mjs').then((r) => r.default));
+const LazySvgIcon = defineAsyncComponent(() => import('./svg-icon-BopcabGT.mjs').then((r) => r.default));
 const lazyGlobalComponents = [
   ["SvgIcon", LazySvgIcon]
 ];
@@ -1066,7 +1066,7 @@ const plugins = [
   vue_slider_6bmQIPZz2Y
 ];
 const layouts = {
-  default: () => import('./default-DKXOsxjZ.mjs').then((m) => m.default || m),
+  default: () => import('./default-C_o2bYxu.mjs').then((m) => m.default || m),
   "svg-sprite": () => import('./svg-sprite-Df_1E3IX.mjs').then((m) => m.default || m)
 };
 const LayoutLoader = defineComponent({

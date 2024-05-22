@@ -1,0 +1,6 @@
+const Tabs_vue_vue_type_style_index_0_scoped_68310152_lang = ".product-info-list[data-v-68310152]{-moz-column-gap:60px;column-gap:60px;display:grid;grid-auto-flow:column;grid-template-rows:repeat(6,max-content);padding:0}.tabs[data-v-68310152]{display:grid;grid-template-columns:100%;row-gap:40px}.tabs__list[data-v-68310152]{border-bottom:1px solid #1076bf;display:flex;list-style:none;margin:0;padding:0}.tabs__btn[data-v-68310152]{align-items:center;display:flex;justify-content:center;padding:28px}.tabs__btn.active[data-v-68310152]{border-bottom:4px solid #21b1ff}.tabs__reviews[data-v-68310152]{-moz-column-gap:100px;column-gap:100px;display:grid;grid-template-columns:minmax(auto,700px) 1fr;min-height:0;min-width:0}.tabs__reviews-btns[data-v-68310152]{align-content:flex-start;display:grid;flex:1;row-gap:20px}@media screen and (max-width:767px){.tabs__list[data-v-68310152]{overflow-x:auto}.tabs__btn[data-v-68310152]{padding:20px}.tabs__reviews[data-v-68310152]{display:flex;flex-direction:column-reverse;min-height:0;min-width:0;row-gap:40px;width:100%}.product-info-list[data-v-68310152]{grid-auto-flow:row}}";
+
+const TabsStyles_i3967Zh3 = [Tabs_vue_vue_type_style_index_0_scoped_68310152_lang];
+
+export { TabsStyles_i3967Zh3 as default };
+//# sourceMappingURL=Tabs-styles.i3967Zh3.mjs.map

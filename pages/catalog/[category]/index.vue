@@ -2,38 +2,9 @@
     <main class="main">
         <app-breadcrumbs :breadcrumbs="breadcrumbs"></app-breadcrumbs>
 
-        <the-section class="catalog-category">
-            <div class="catalog-category__wrap">
-                <aside class="catalog-category__aside">
-					<div class="catalog-category__filter">
-						<ui-dropdown-list title="Категория" :list="category" is-link="true" show-more></ui-dropdown-list>
-
-						<!-- <ui-dropdown-list title="Тип продукта" :list="type" is-input-checkbox="true"></ui-dropdown-list>
-
-						<ui-dropdown-list title="Бренд" :list="brands" is-input-check-btn="true" is-flex show-more></ui-dropdown-list>
-
-						<ui-dropdown-list title="Цена" :list="price" is-range-input="true"></ui-dropdown-list>
-
-						<ui-dropdown-list title="Доставка" :list="delivery" is-input-radio="true"></ui-dropdown-list>
-
-						<ui-dropdown-list title="Новинки" is-toggle></ui-dropdown-list>
-
-						<ui-button is-ghost type="reset">
-							<span>Очистить фильтр</span>
-							<svg-icon name="trash" width="24" height="24"></svg-icon>
-						</ui-button> -->
-					</div>
-                </aside>
-
-				<div class="catalog-category__grid">
-					<product-grid :product-list="products"></product-grid>
-				</div>
-
-				<div class="catalog-category__pagination">
-					<ui-pagination></ui-pagination>
-				</div>
-            </div>
-        </the-section>
+		<catalog-category-section :products="products">
+			<ui-dropdown-list title="Категория" :list="category" is-link="true" show-more></ui-dropdown-list>
+		</catalog-category-section>
 
 		<product-slider-section :slider-list="saleCards">Популярное</product-slider-section>
 
@@ -251,31 +222,3 @@ export default {
     },
 }
 </script>
-
-<style lang="scss" scoped>
-.catalog-category {
-    &__wrap {
-        display: grid;
-        grid-template-columns: minmax(auto, 260px) 1fr;
-		column-gap: 28px;
-    }
-
-    &__filter {
-        display: grid;
-        row-gap: 28px;
-    }
-
-	&__pagination {
-		grid-column: 1 / -1;
-	}
-}
-
-@media screen and (max-width: 767px) {
-	.catalog-category {
-		&__wrap {
-			grid-template-columns: 100%;
-			row-gap: 28px;
-		}
-	}
-}
-</style>

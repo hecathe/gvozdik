@@ -48,7 +48,7 @@ export default {
 	methods: {
 		selectCategory(item) {
 			this.activeTab = item.id;
-			this.$emit('checked-category', item.title);
+			this.$emit('checked-category', item.id);
 		}
 	},
 }

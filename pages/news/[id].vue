@@ -4,15 +4,17 @@
 
         <the-section class="news-detail">
             <div class="news-detail__wrap">
-                <div class="news-detail__content">
+                <div class="news-detail__top">
                     <h1 class="news-detail__title h1">{{ content.title }}</h1>
+
+					<div class="news-detail__social">
+						<social-list :social-list="social" vertical blue></social-list>
+					</div>
+					
                     <span class="news-detail__date grey">{{ content.date }}</span>
-                    <div class="news-detail__text" v-html="content.text"></div>
                 </div>
 
-                <div class="news-detail__aside">
-                    <social-list :social-list="social" vertical blue></social-list>
-                </div>
+                <div class="news-detail__text" v-html="content.text"></div>
             </div>
 
             <swiper-container class="news-detail__slider news-detail-slider" navigation="true">
@@ -84,8 +86,13 @@ export default {
         margin-bottom: 60px;
     }
 
+	&__top {
+		display: grid;
+		row-gap: 16px;
+	}
+
     &__title {
-        margin-bottom: 16px;
+        margin-bottom: 0;
     }
 
     &__text {
@@ -94,7 +101,7 @@ export default {
         margin-top: 40px;
     }
 
-    &__aside {
+    &__social {
         position: absolute;
         top: 0;
         right: 0;
@@ -107,5 +114,17 @@ export default {
         max-height: 500px;
         object-fit: cover;
     }
+}
+
+@media screen and (max-width: 767px) {
+	.news-detail {
+		&__top {
+			row-gap: 24px;
+		}
+
+		&__social {
+			position: static;
+		}
+	}
 }
 </style>
