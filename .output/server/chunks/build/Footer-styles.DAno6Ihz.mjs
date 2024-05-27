@@ -1,6 +1,0 @@
-const Footer_vue_vue_type_style_index_0_scoped_ec38440a_lang = ".footer[data-v-ec38440a]{background-color:#e7e7e7}.footer__top[data-v-ec38440a]{display:flex;justify-content:space-between;padding:40px 0 60px}.footer__block[data-v-ec38440a]{display:flex;flex-direction:column;font-weight:500;row-gap:24px}.footer__logo[data-v-ec38440a]{display:flex}.footer__tel[data-v-ec38440a]{color:inherit;font-size:28px;font-weight:700;line-height:120%;text-decoration:none}.footer__tel[data-v-ec38440a]:hover{color:#1076bf}.footer__link[data-v-ec38440a]{color:inherit}.footer__link[data-v-ec38440a]:hover{text-decoration:none}.footer__title[data-v-ec38440a]{font-size:28px;font-weight:700;line-height:120%}.footer__bottom[data-v-ec38440a]{border-top:1px solid #282828;display:grid;grid-template-columns:1fr 1fr;padding:28px 0}@media screen and (max-width:767px){.footer__top[data-v-ec38440a]{flex-direction:column;padding:40px 0;row-gap:20px}.footer__bottom[data-v-ec38440a]{display:flex;flex-direction:column-reverse;row-gap:20px}.footer__bottom__block[data-v-ec38440a]:first-child{align-items:center;flex-direction:column-reverse}}";
-
-const FooterStyles_DAno6Ihz = [Footer_vue_vue_type_style_index_0_scoped_ec38440a_lang];
-
-export { FooterStyles_DAno6Ihz as default };
-//# sourceMappingURL=Footer-styles.DAno6Ihz.mjs.map

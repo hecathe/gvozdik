@@ -1,4 +1,4 @@
-import { version, unref, inject, defineAsyncComponent, defineComponent, h, computed, ref, provide, shallowReactive, watch, Suspense, nextTick, Transition, hasInjectionContext, mergeProps, useSSRContext, createApp, effectScope, reactive, getCurrentInstance, onErrorCaptured, onServerPrefetch, createVNode, resolveDynamicComponent, toRef, shallowRef, isReadonly, isRef, isShallow, isReactive, toRaw, withCtx } from 'vue';
+import { version, unref, inject, defineAsyncComponent, defineComponent, h, computed, ref, provide, shallowReactive, watch, Suspense, nextTick, Transition, hasInjectionContext, mergeProps, useSSRContext, createApp, effectScope, reactive, getCurrentInstance, shallowRef, isReadonly, onErrorCaptured, onServerPrefetch, createVNode, resolveDynamicComponent, toRef, isRef, isShallow, isReactive, toRaw, withCtx } from 'vue';
 import { d as useRuntimeConfig$1, l as joinRelativeURL, $ as $fetch, w as withQuery, m as hasProtocol, p as parseURL, n as isScriptProtocol, j as joinURL, o as defu, q as sanitizeStatusCode, r as createHooks, h as createError$1, t as toRouteMatcher, v as createRouter$1 } from '../runtime.mjs';
 import { getActiveHead } from 'unhead';
 import { defineHeadPlugin } from '@unhead/shared';
@@ -646,7 +646,7 @@ const _routes = [
     meta: { ...{}, ...{ "layout": "svg-sprite" } },
     alias: [],
     redirect: void 0 ,
-    component: () => import('./icons-page-BKXxF7gT.mjs').then((m) => m.default || m)
+    component: () => import('./icons-page-B1cHH0iU.mjs').then((m) => m.default || m)
   },
   {
     name: "cart",
@@ -654,7 +654,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./cart-SmWzpkdX.mjs').then((m) => m.default || m)
+    component: () => import('./cart-oM4NViY-.mjs').then((m) => m.default || m)
   },
   {
     name: "catalog-category-subcategory-id",
@@ -662,7 +662,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_id_-DD4AjZXD.mjs').then((m) => m.default || m)
+    component: () => import('./_id_-41rHm3Y8.mjs').then((m) => m.default || m)
   },
   {
     name: "catalog-category-subcategory",
@@ -670,7 +670,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./index-D_dQlicw.mjs').then((m) => m.default || m)
+    component: () => import('./index-CRCv2lbn.mjs').then((m) => m.default || m)
   },
   {
     name: "catalog-category",
@@ -678,7 +678,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./index-2oC3LEpq.mjs').then((m) => m.default || m)
+    component: () => import('./index-JGAbF-sc.mjs').then((m) => m.default || m)
   },
   {
     name: "catalog",
@@ -686,7 +686,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./index-DIyLXmzx.mjs').then((m) => m.default || m)
+    component: () => import('./index-BZ_KaEVl.mjs').then((m) => m.default || m)
   },
   {
     name: "contacts",
@@ -694,7 +694,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./contacts-BtlzrN3W.mjs').then((m) => m.default || m)
+    component: () => import('./contacts-CB2O_eQj.mjs').then((m) => m.default || m)
   },
   {
     name: "delivery",
@@ -702,7 +702,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./delivery-Bl1DaWF5.mjs').then((m) => m.default || m)
+    component: () => import('./delivery-Clf5GgI7.mjs').then((m) => m.default || m)
   },
   {
     name: "index",
@@ -710,7 +710,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./index-wrAEpJkC.mjs').then((m) => m.default || m)
+    component: () => import('./index-D5XEIqRU.mjs').then((m) => m.default || m)
   },
   {
     name: "news-id",
@@ -718,7 +718,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_id_-p_2c_vrR.mjs').then((m) => m.default || m)
+    component: () => import('./_id_-Cgx5tcsf.mjs').then((m) => m.default || m)
   },
   {
     name: "news",
@@ -726,7 +726,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./index-eMeIWW8S.mjs').then((m) => m.default || m)
+    component: () => import('./index-BaHQL2NN.mjs').then((m) => m.default || m)
   }
 ];
 const _wrapIf = (component, props, slots) => {
@@ -1039,7 +1039,7 @@ const revive_payload_server_eJ33V7gbc6 = /* @__PURE__ */ defineNuxtPlugin({
     }
   }
 });
-const LazySvgIcon = defineAsyncComponent(() => import('./svg-icon-BopcabGT.mjs').then((r) => r.default));
+const LazySvgIcon = defineAsyncComponent(() => import('./svg-icon-C_daPMru.mjs').then((r) => r.default));
 const lazyGlobalComponents = [
   ["SvgIcon", LazySvgIcon]
 ];
@@ -1052,7 +1052,7 @@ const components_plugin_KR1HBZs4kY = /* @__PURE__ */ defineNuxtPlugin({
     }
   }
 });
-const swiper_xwaaUO4rVf = /* @__PURE__ */ defineNuxtPlugin(() => {
+const swiper = /* @__PURE__ */ defineNuxtPlugin(() => {
   register();
 });
 const vue_slider_6bmQIPZz2Y = () => {
@@ -1062,11 +1062,11 @@ const plugins = [
   plugin,
   revive_payload_server_eJ33V7gbc6,
   components_plugin_KR1HBZs4kY,
-  swiper_xwaaUO4rVf,
+  swiper,
   vue_slider_6bmQIPZz2Y
 ];
 const layouts = {
-  default: () => import('./default-C_o2bYxu.mjs').then((m) => m.default || m),
+  default: () => import('./default-d0IPvqbJ.mjs').then((m) => m.default || m),
   "svg-sprite": () => import('./svg-sprite-Df_1E3IX.mjs').then((m) => m.default || m)
 };
 const LayoutLoader = defineComponent({
@@ -1444,5 +1444,5 @@ let entry;
 }
 const entry$1 = (ssrContext) => entry(ssrContext);
 
-export { _export_sfc as _, useRuntimeConfig as a, navigateTo as b, __nuxt_component_0 as c, entry$1 as default, injectHead as i, nuxtLinkDefaults as n, publicAssetsURL as p, resolveUnrefHeadInput as r, useRouter as u };
+export { _export_sfc as _, useRuntimeConfig as a, navigateTo as b, __nuxt_component_0 as c, entry$1 as default, injectHead as i, nuxtLinkDefaults as n, publicAssetsURL as p, resolveUnrefHeadInput as r, swiper as s, useRouter as u };
 //# sourceMappingURL=server.mjs.map

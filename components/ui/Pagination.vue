@@ -5,6 +5,7 @@
         <ul class="pagination__list pagination-list">
             <li class="pagination__item pagination-list__item" v-for="(item, index) in totalPages" :key="index">
                 <button class="pagination-list__btn">{{ item }}</button>
+				<!-- <button v-if="item > 5"></button> -->
             </li>
         </ul>
     </div>
@@ -37,7 +38,9 @@ export default {
 
     &-list {
         display: flex;
-        column-gap: 24px;
+		flex-wrap: wrap;
+		justify-content: center;
+        gap: 24px;
         @include reset-list;
 
         &__btn {

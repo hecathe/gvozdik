@@ -1607,7 +1607,7 @@ export default {
 <style lang="scss" scoped>
 @media screen and (max-width: 767px) {
 	.top {
-		position: fixed;
+		position: sticky;
 		top: 0;
 		width: 100%;
 		z-index: 2;

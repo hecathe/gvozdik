@@ -23,20 +23,13 @@
 				></div>
 
 				<div v-else-if="tab.id == 2" >
-					<product-info-list 
-						:info-list="tab.content"
-					></product-info-list>
+					<product-info-list :info-list="tab.content"></product-info-list>
 				</div>
 
 				<div 
-					class="tabs__reviews"
 					v-else-if="tab.id == 3"
 				>
-					<reviews-list :reviews-list="tab.content"></reviews-list>
-					<div class="tabs__reviews-btns">
-						<ui-button>Оставить отзыв</ui-button>
-						<ui-button is-ghost>Задать вопрос</ui-button>
-					</div>
+					<reviews-block :reviews-list="tab.content"></reviews-block>
 				</div>
 			</div>
 		</div>
@@ -92,21 +85,6 @@ export default {
 			border-bottom: 4px solid $mainBlue;
 		}
 	}
-
-	&__reviews {
-		min-width: 0;
-		min-height: 0;
-		display: grid;
-		grid-template-columns: minmax(auto, 700px) 1fr;
-		column-gap: 100px;
-	}
-
-	&__reviews-btns {
-		flex: 1;
-		display: grid;
-		align-content: flex-start;
-		row-gap: 20px;
-	}
 }
 
 @media screen and (max-width: 767px) {
@@ -117,15 +95,6 @@ export default {
 
 		&__btn {
 			padding: 20px;
-		}
-
-		&__reviews {
-			min-width: 0;
-			min-height: 0;
-			width: 100%;
-			display: flex;
-			flex-direction: column-reverse;
-			row-gap: 40px;
 		}
 	}
 

@@ -6,11 +6,16 @@
 				<div class="reviews-card__date">{{ reviewsCard.date }}</div>
 			</div>
 
-			<ul class="reviews-card__stars">
-				<li class="reviews-card__star" v-for="(star, index) in 5" :key="index">
-					<svg-icon name="star" width="20" height="20" fill="FFB422"></svg-icon>
-				</li>
-			</ul>
+			<ClientOnly >
+				<star-rating
+					:read-only="true"
+					:increment="0.5" 
+					:rating="4"
+					:star-size="30"
+					:show-rating="false"
+					active-color="#FFB422"
+				></star-rating>
+			</ClientOnly>
 		</div>
 
 		<div class="reviews-card__block">
@@ -29,30 +34,33 @@
 		</div>
 
 		<div class="reviews-card__slider">
-			<swiper-container 
-				class="reviews-card__container" 
-				:breakpoints="{
-					0: {
-						slidesPerView: 3,
-					},
-					500: {
-						slidesPerView: 4,
-					},
-					1280: {
-						slidesPerView: 6,
-					},
-				}" 
-				space-between="20" 
-				:navigation-prev-el="`.custom-prev-button-${reviewsCard.id}`"
-				:navigation-next-el="`.custom-next-button-${reviewsCard.id}`"
-			>
-				<swiper-slide class="reviews-card__slide-item" v-for="(image, index) in reviewsCard.images"
-					:key="index">
-					<div class="reviews-card__img">
-						<img :src="image" alt="">
-					</div>
-				</swiper-slide>
-			</swiper-container>
+			<ClientOnly>
+				<swiper-container 
+					class="reviews-card__container" 
+					:space-between="20"
+					:breakpoints="{
+						0: {
+							slidesPerView: 3,
+						},
+						500: {
+							slidesPerView: 4,
+						},
+						1280: {
+							slidesPerView: 6,
+						},
+					}"
+					:navigation-prev-el="`.custom-prev-button-${reviewsCard.id}`"
+					:navigation-next-el="`.custom-next-button-${reviewsCard.id}`"
+				>
+					<swiper-slide class="reviews-card__slide-item" v-for="(image, index) in reviewsCard.images"
+						:key="index">
+						<div class="reviews-card__img">
+							<img :src="image" alt="">
+						</div>
+					</swiper-slide>
+				</swiper-container>
+			</ClientOnly>
+
 			<div :class="`custom-button custom-prev-button custom-prev-button-${reviewsCard.id}`">
 				<svg-icon name="arrow-left" width="24" height="24"></svg-icon>
 			</div>
@@ -103,6 +111,7 @@ export default {
 
 	&__slider {
 		position: relative;
+		max-height: 100px;
 	}
 
 	&__img {

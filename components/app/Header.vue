@@ -83,6 +83,7 @@ export default {
 <style lang="scss" scoped>
 .header {
 	background-color: white;
+	z-index: 10;
 
 	&__burger {
 		display: none;

@@ -1,14 +1,16 @@
 <template>
 	<div class="textarea">
-		<label class="textarea__label" :for="id">{{ label }}</label>
-		<textarea 
-			class="textarea__field" 
-			:name="name" 
-			:id="id" 
-			:placeholder="placeholder"
-			cols="10" 
-			rows="5"
-		></textarea>
+		<label class="textarea__label">
+			{{ label }}
+			<textarea 
+				class="textarea__field" 
+				:name="name" 
+				:id="id" 
+				:placeholder="placeholder"
+				cols="10" 
+				rows="5"
+			></textarea>
+		</label>
 	</div>
 </template>
 
@@ -21,15 +23,15 @@ export default {
 		},
 		value: {
 			type: String,
-			required: true,
+			default: '',
 		},
 		id: {
 			type: String,
-			required: true,
+			default: '',
 		},
 		name: {
 			type: String,
-			required: true,
+			default: '',
 		},
 		placeholder: {
 			type: String,
@@ -43,10 +45,9 @@ export default {
 .textarea {
 	$this: &;
 
-	display: grid;
-	row-gap: 8px;
-
 	&__label {
+		display: grid;
+		row-gap: 8px;
 		font-weight: 700;
 		font-size: 14px;
 		line-height: 120%;

@@ -53,6 +53,10 @@ export default {
 			grid-template-columns: 100%;
 			row-gap: 28px;
 		}
+
+		&__filter {
+			row-gap: 20px;
+		}
 	}
 }
 </style>

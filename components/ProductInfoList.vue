@@ -40,7 +40,7 @@ export default {
 		span {
 			display: block;
 			background-color: $white;
-			z-index: 2;
+			z-index: 1;
 
 			&.bold {
 				font-weight: 700;

@@ -37,16 +37,17 @@ export default {
 
 <style lang="scss" scoped>
 .number {
-	// width: max-content;
 	width: 100%;
-	// min-height: 52px;
-	display: flex;
+	height: 50px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
 	align-items: center;
 	background-color: $grey_m;
 
 	&__input {
-		max-width: 60px;
-		// width: 52px;
+		display: grid;
+		max-width: 100%;
+		width: 100%;
 		height: 100%;
 		text-align: center;
 		background-color: $grey_m;

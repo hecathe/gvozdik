@@ -1,7 +1,7 @@
 <template>
 	<ul class="reviews-list">
-		<li class="reviews-list__item" v-for="(reviewCard, index) in reviewsList" :key="index">
-			<reviews-card :reviews-card="reviewCard"></reviews-card>
+		<li class="reviews-list__item" v-for="(reviewsCard, index) in reviewsList" :key="index">
+			<reviews-card :reviews-card="reviewsCard"></reviews-card>
 		</li>
 		<li>
 			<ui-pagination></ui-pagination>

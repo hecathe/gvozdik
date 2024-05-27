@@ -34,7 +34,22 @@
 			<h2 class="h2">Форма обратной связи</h2>
 
 			<div class="contacts-form__wrap">
-				<app-form :form-fields="form_fields"></app-form>
+				<app-form>
+					<ul class="form__list">
+						<li class="form__item form__item_full">
+							<ui-input type="text" label="ФИО"></ui-input>
+						</li>
+						<li class="form__item">
+							<ui-input type="tel" label="Номер телефона"></ui-input>
+						</li>
+						<li class="form__item">
+							<ui-input type="email" label="E-mail"></ui-input>
+						</li>
+						<li class="form__item form__item_full">
+							<ui-textarea label="Комментарий"></ui-textarea>
+						</li>
+					</ul>
+				</app-form>
 
 				<div class="contacts-form__img">
 					<img src="/images/tools-store.jpg" alt="">

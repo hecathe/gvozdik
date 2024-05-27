@@ -46,6 +46,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.number {
+	max-width: 170px;
+}
 .cart-item {
 	display: grid;
 	grid-template-columns: 150px 1fr;

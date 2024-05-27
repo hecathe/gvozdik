@@ -1,6 +1,7 @@
 <template>
 	<form class="form">
-		<ul class="form__list">
+		<slot></slot>
+		<!-- <ul class="form__list">
 			<li 
 				class="form__item" 
 				:class="{'form__item_full': field.full}"
@@ -22,7 +23,7 @@
 					:placeholder="field.placeholder"
 				></ui-input>
 			</li>
-		</ul>
+		</ul> -->
 
 		<ui-button>{{ btnText }}</ui-button>
 	</form>
@@ -43,7 +44,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .form {
 	display: flex;
 	flex-direction: column;
@@ -65,6 +66,8 @@ export default {
 
 @media screen and (max-width: 767px) {
 	.form {
+		row-gap: 24px;
+		
 		&__list {
 			grid-template-columns: 1fr;
 		}

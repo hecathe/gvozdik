@@ -119,8 +119,12 @@ export default {
 		
 		&__top {
 			flex-direction: column;
-    		row-gap: 20px;
-			padding: 40px 0;
+    		row-gap: 16px;
+			padding: 20px 0;
+		}
+
+		&__title {
+			font-size: 20px;
 		}
 
 		&__bottom {

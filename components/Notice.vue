@@ -1,15 +1,34 @@
 <template>
-	<div class="notice">
+	<div class="notice" v-if="show">
 		<div class="container">
 			<div class="notice__wrap">
 				<p class="notice__text">Скидка 20% на первый заказ</p>
-				<button class="notice__btn" aria-label="Закрыть">
+				<button 
+					@click="closeNotice"
+					class="notice__btn" 
+					aria-label="Закрыть"
+				>
 					<svg-icon name="close" width="24" height="24"></svg-icon>
 				</button>
 			</div>
 		</div>
 	</div>
 </template>
+
+<script>
+export default {
+	data() {
+		return {
+			show: true,
+		}
+	},
+	methods: {
+		closeNotice() {
+			this.show = false;
+		}
+	},
+}
+</script>
 
 <style lang="scss" scoped>
 .notice {

@@ -1,29 +1,31 @@
 <template>
 	<div class="swiper">
-		<swiper-container 
-			class="product-slider" 
-			:breakpoints="{
-				0: {
-					slidesPerView: 1,
-				},
-				500: {
-					slidesPerView: 2,
-				},
-				768: {
-					slidesPerView: 3,
-				},
-				1280: {
-					slidesPerView: 4,
-				},
-			}"
-			mousewheel="false" 
-			allow-touch-move="true" 
-			space-between="60"
-		>
-			<swiper-slide class="product-slider__item" v-for="(item, index) in cards" :key="index">
-				<product-card :card="item"></product-card>
-			</swiper-slide>
-		</swiper-container >
+		<ClientOnly >
+			<swiper-container 
+				class="product-slider" 
+				:breakpoints="{
+					0: {
+						slidesPerView: 1,
+					},
+					500: {
+						slidesPerView: 2,
+					},
+					768: {
+						slidesPerView: 3,
+					},
+					1280: {
+						slidesPerView: 4,
+					},
+				}"
+				mousewheel="false" 
+				allow-touch-move="true" 
+				space-between="60"
+			>
+				<swiper-slide class="product-slider__item" v-for="(item, index) in cards" :key="index">
+					<product-card :card="item"></product-card>
+				</swiper-slide>
+			</swiper-container >
+		</ClientOnly>
 	</div>
 </template>
 

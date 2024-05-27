@@ -2,9 +2,9 @@
 	<div class="product-card">
 		<div class="product-card__slider">
 			<swiper-container 
-				pagination="true" 
+				:pagination="true" 
+				:pagination-clickable="true"
 				:allow-touch-move="$route.path.includes('catalog') ? true : false" slides-per-view="1" 
-				auto-height="true"
 			>
 				<swiper-slide v-for="(item, index) in card.images" :key="index">
 					<!-- <div class="hover-area"></div>
@@ -36,6 +36,8 @@
 </template>
 
 <script>
+import swiper from '~/plugins/swiper';
+
 export default {
 	props: {
 		card: {
@@ -43,11 +45,29 @@ export default {
 			default: () => { },
 		},
 	},
+	data() {
+		return {
+			swiper: null,
+		}
+	},
+	methods: {
+		onSwiper() {
+			this.swiper = swiper;
+		},
+
+		handleSlideTo() {
+			this.swiper.slideTo(2);
+		},
+	},
 }
 </script>
 
 <style lang="scss" scoped>
 .product-card {
+
+	.btn {
+		padding: 12px 28px;
+	}
 
 	.hover-area {
 		position: absolute;

@@ -1,13 +1,16 @@
 <template>
 	<div class="input">
-		<label :for="id" class="input__label">{{ label }}</label>
-		<input 
-			:type="type" 
-			:id="id" 
-			:placeholder="placeholder" 
-			v-model="value" 
-			class="input__field" 
-		>
+		<label class="input__label">
+			{{ label }}
+
+			<input 
+				:type="type" 
+				:id="id" 
+				:placeholder="placeholder" 
+				v-model="value" 
+				class="input__field" 
+			>
+		</label>
 	</div>
 </template>
 
@@ -44,10 +47,9 @@ export default {
 .input {
 	$this: &;
 
-	display: grid;
-	row-gap: 8px;
-
 	&__label {
+		display: grid;
+		row-gap: 8px;
 		font-weight: 700;
 		font-size: 14px;
 		line-height: 120%;

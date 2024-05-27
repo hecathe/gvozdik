@@ -184,10 +184,4 @@ export default {
 .main {
 	padding-top: 0;
 }
-
-@media screen and (max-width: 767px) {
-	.main {
-		padding-top: 118px;
-	}
-}
 </style>
