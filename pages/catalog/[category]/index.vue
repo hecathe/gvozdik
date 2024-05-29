@@ -4,6 +4,7 @@
 
 		<catalog-category-section :products="products">
 			<ui-dropdown-list title="Категория" :list="category" is-link="true" show-more></ui-dropdown-list>
+			<promo-side-bar :img="promo.img" :title="promo.title" :text="promo.content"></promo-side-bar>
 		</catalog-category-section>
 
 		<product-slider-section :slider-list="saleCards">Популярное</product-slider-section>
@@ -218,6 +219,11 @@ export default {
 					link: '/catalog/tools/handtools/kleshi-sparta-250mm/',
 				},
 			],
+			promo: {
+				img: '/gvozdik/images/toolsss.jpg',
+				title: 'Promo',
+				content: '<p>We produce<br> the best products</p>',
+			}
         }
     },
 }

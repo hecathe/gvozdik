@@ -1,6 +1,0 @@
-const CatalogNavItem_vue_vue_type_style_index_0_scoped_84ca5c74_lang = ".catalog-nav-item.span-2[data-v-84ca5c74]{grid-column:span 2}.catalog-nav-item__link[data-v-84ca5c74]{color:#282828;display:grid;height:300px;overflow:hidden;padding:28px;position:relative;text-decoration:none;transition:all .15s linear}.catalog-nav-item__link[data-v-84ca5c74]:hover{border-radius:10px;box-shadow:0 4px 20px rgba(40,40,40,.25);transform:scale(1.05)}.catalog-nav-item__content[data-v-84ca5c74]{align-content:space-between;display:grid}.catalog-nav-item__icon[data-v-84ca5c74]{justify-self:flex-end}.catalog-nav-item__background[data-v-84ca5c74]{height:100%;left:0;position:absolute;top:0;width:100%;z-index:-1}.catalog-nav-item__img[data-v-84ca5c74]{height:100%;-o-object-fit:cover;object-fit:cover;width:100%}@media screen and (max-width:1279px){.catalog-nav-item.span-2[data-v-84ca5c74]{grid-column:1/-1}}@media screen and (max-width:767px){.catalog-nav-item.span-2[data-v-84ca5c74]{grid-column:span 1}}";
-
-const CatalogNavItemStyles_RAI7XeOa = [CatalogNavItem_vue_vue_type_style_index_0_scoped_84ca5c74_lang];
-
-export { CatalogNavItemStyles_RAI7XeOa as default };
-//# sourceMappingURL=CatalogNavItem-styles.RAI7XeOa.mjs.map

@@ -1,64 +1,98 @@
 <template>
-    <div class="pagination">
-        <ui-button class="pagination__btn">Показать ещё</ui-button>
+	<div class="pagination">
+		<ui-button class="pagination__btn">Показать ещё</ui-button>
 
-        <ul class="pagination__list pagination-list">
-            <li class="pagination__item pagination-list__item" v-for="(item, index) in totalPages" :key="index">
-                <button class="pagination-list__btn">{{ item }}</button>
-				<!-- <button v-if="item > 5"></button> -->
-            </li>
-        </ul>
-    </div>
+		<ClientOnly>
+			<vue-awesome-paginate 
+				:total-items="totalCards" 
+				:items-per-page="cardsPerPage" 
+				:max-pages-shown="4"
+				:show-breakpoint-buttons="false" 
+				:hide-prev-next-when-ends="true" 
+				v-model="currentPage"
+			>
+				<template #prev-button>
+					<svg-icon name="Chevron_Left_MD" width="48" height="48"></svg-icon>
+				</template>
+				<template #next-button>
+					<svg-icon name="Chevron_Right_MD" width="48" height="48"></svg-icon>
+				</template>
+			</vue-awesome-paginate>
+		</ClientOnly>
+	</div>
 </template>
 
 <script>
 export default {
-    props: {
-        // totalPages: {
-        //     type: Number,
-        // }
-    },
-
-    data() {
-        return {
-            totalPages: 5,
-        }
-    },
+	props: {
+		totalCards: {
+			type: Number,
+			default: 20,
+			required: true,
+		},
+		cardsPerPage: {
+			type: Number,
+			default: 5,
+		},
+	},
+	data() {
+		return {
+			currentPage: 1,
+		}
+	},
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .pagination {
-    width: 55%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: auto;
-    margin-top: 60px;
+	width: 55%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: auto;
+	margin-top: 60px;
+}
 
-    &-list {
-        display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-        gap: 24px;
-        @include reset-list;
+.pagination-container {
+	column-gap: 10px;
+}
 
-        &__btn {
-            width: 48px;
-            height: 48px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-weight: 700;
-            font-size: 24px;
-            line-height: 120%;
-            background-color: $grey_m;
+.paginate-buttons {
+	width: 48px;
+	height: 48px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 120%;
+	background-color: $grey_m;
 
-            &:hover {
-                background-color: $grey;
-            }
-        }
-    }
+	&:hover {
+		background-color: $grey;
+	}
+}
+
+.active-page {
+	background-color: $mainBlue;
+	color: white;
+
+	&:hover {
+		background-color: $darkBlue;
+	}
+}
+
+.back-button,
+.next-button {
+	// background-color: $mainBlue;
+
+	// svg {
+	// 	--currentColor: #{$white};
+	// }
+
+	// &:hover {
+	// 	background-color: $darkBlue;
+	// }
 }
 
 @media screen and (max-width: 767px) {

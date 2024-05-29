@@ -7,6 +7,12 @@
 			:catalog-menu="catalog_menu"
 		></AppHeader>
 	</div>
+	<!-- <main 
+		class="main"
+		:class="{pt40: $route.path !== '/'}"
+	>
+		<slot />
+	</main> -->
 	<slot />
 	<subscribe-form></subscribe-form>
 	<AppFooter
@@ -28,7 +34,7 @@ export default {
 				},
 				{
 					name: "О компании",
-					link: "#"
+					link: "/about-company/"
 				},
 				{
 					name: "Доставка",

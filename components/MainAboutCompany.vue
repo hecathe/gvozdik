@@ -1,6 +1,6 @@
 <template>
 	<the-section class="about-company">
-		<app-title>О компании</app-title>
+		<app-title url="/about-company/">О компании</app-title>
 
 		<div class="about-company__content">
 			<div class="about-company__text">

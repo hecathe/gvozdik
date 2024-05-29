@@ -3,11 +3,11 @@
         <app-breadcrumbs :breadcrumbs="breadcrumbs"></app-breadcrumbs>
 
 		<the-section class="delivery">
-			<div class="delivery__wrap">
+			<container-narrow>
 				<h1 class="h1">Доставка</h1>
 
 				<ui-accordion-list :acc-list="acc_list"></ui-accordion-list>
-			</div>
+			</container-narrow>
 		</the-section>
 	</main>
 </template>
@@ -46,13 +46,3 @@ export default {
 	},
 }
 </script>
-
-<style lang="scss" scoped>
-.delivery {
-	&__wrap {
-		display: grid;
-		grid-template-columns: minmax(auto, 700px);
-		justify-content: center;
-	}
-}
-</style>

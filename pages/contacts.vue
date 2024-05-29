@@ -37,16 +37,16 @@
 				<app-form>
 					<ul class="form__list">
 						<li class="form__item form__item_full">
-							<ui-input type="text" label="ФИО"></ui-input>
+							<ui-input type="text" label="ФИО" id="name" placeholder="Insert your name"></ui-input>
 						</li>
 						<li class="form__item">
-							<ui-input type="tel" label="Номер телефона"></ui-input>
+							<ui-input type="tel" label="Номер телефона" id="tel" placeholder="+7 900 000 00 00"></ui-input>
 						</li>
 						<li class="form__item">
-							<ui-input type="email" label="E-mail"></ui-input>
+							<ui-input type="email" label="E-mail" id="email" placeholder="ivanov@ivan.com"></ui-input>
 						</li>
 						<li class="form__item form__item_full">
-							<ui-textarea label="Комментарий"></ui-textarea>
+							<ui-textarea label="Комментарий" placeholder="Comment..."></ui-textarea>
 						</li>
 					</ul>
 				</app-form>

@@ -4,6 +4,7 @@ import { getActiveHead } from 'unhead';
 import { defineHeadPlugin } from '@unhead/shared';
 import { useRoute as useRoute$1, RouterView, createMemoryHistory, createRouter, START_LOCATION } from 'vue-router';
 import { register } from 'swiper/element/bundle';
+import VueAwesomePaginate from 'vue-awesome-paginate';
 import { ssrRenderSuspense, ssrRenderComponent, ssrRenderVNode, ssrRenderAttrs } from 'vue/server-renderer';
 import 'node:http';
 import 'node:https';
@@ -646,7 +647,15 @@ const _routes = [
     meta: { ...{}, ...{ "layout": "svg-sprite" } },
     alias: [],
     redirect: void 0 ,
-    component: () => import('./icons-page-B1cHH0iU.mjs').then((m) => m.default || m)
+    component: () => import('./icons-page-7ragxuIQ.mjs').then((m) => m.default || m)
+  },
+  {
+    name: "about-company",
+    path: "/about-company",
+    meta: {},
+    alias: [],
+    redirect: void 0 ,
+    component: () => import('./about-company-D4sniU4S.mjs').then((m) => m.default || m)
   },
   {
     name: "cart",
@@ -654,7 +663,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./cart-oM4NViY-.mjs').then((m) => m.default || m)
+    component: () => import('./cart-CSHJF81q.mjs').then((m) => m.default || m)
   },
   {
     name: "catalog-category-subcategory-id",
@@ -662,7 +671,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_id_-41rHm3Y8.mjs').then((m) => m.default || m)
+    component: () => import('./_id_-7wNr7OU8.mjs').then((m) => m.default || m)
   },
   {
     name: "catalog-category-subcategory",
@@ -670,7 +679,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./index-CRCv2lbn.mjs').then((m) => m.default || m)
+    component: () => import('./index-CTSM1kBt.mjs').then((m) => m.default || m)
   },
   {
     name: "catalog-category",
@@ -678,7 +687,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./index-JGAbF-sc.mjs').then((m) => m.default || m)
+    component: () => import('./index-ACp3NGJe.mjs').then((m) => m.default || m)
   },
   {
     name: "catalog",
@@ -686,7 +695,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./index-BZ_KaEVl.mjs').then((m) => m.default || m)
+    component: () => import('./index-B3r7mPGD.mjs').then((m) => m.default || m)
   },
   {
     name: "contacts",
@@ -694,7 +703,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./contacts-CB2O_eQj.mjs').then((m) => m.default || m)
+    component: () => import('./contacts-D7TaoK7Z.mjs').then((m) => m.default || m)
   },
   {
     name: "delivery",
@@ -702,7 +711,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./delivery-Clf5GgI7.mjs').then((m) => m.default || m)
+    component: () => import('./delivery-B5Rxb8b_.mjs').then((m) => m.default || m)
   },
   {
     name: "index",
@@ -710,7 +719,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./index-D5XEIqRU.mjs').then((m) => m.default || m)
+    component: () => import('./index-OXgWl0Ha.mjs').then((m) => m.default || m)
   },
   {
     name: "news-id",
@@ -718,7 +727,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_id_-Cgx5tcsf.mjs').then((m) => m.default || m)
+    component: () => import('./_id_-GeoAGZ3M.mjs').then((m) => m.default || m)
   },
   {
     name: "news",
@@ -726,7 +735,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./index-BaHQL2NN.mjs').then((m) => m.default || m)
+    component: () => import('./index-7hOUyZT1.mjs').then((m) => m.default || m)
   }
 ];
 const _wrapIf = (component, props, slots) => {
@@ -1039,7 +1048,7 @@ const revive_payload_server_eJ33V7gbc6 = /* @__PURE__ */ defineNuxtPlugin({
     }
   }
 });
-const LazySvgIcon = defineAsyncComponent(() => import('./svg-icon-C_daPMru.mjs').then((r) => r.default));
+const LazySvgIcon = defineAsyncComponent(() => import('./svg-icon-CZ9JOHhh.mjs').then((r) => r.default));
 const lazyGlobalComponents = [
   ["SvgIcon", LazySvgIcon]
 ];
@@ -1055,6 +1064,9 @@ const components_plugin_KR1HBZs4kY = /* @__PURE__ */ defineNuxtPlugin({
 const swiper = /* @__PURE__ */ defineNuxtPlugin(() => {
   register();
 });
+const vue_awesome_paginate_l1b0wTlGPB = /* @__PURE__ */ defineNuxtPlugin((nuxtApp) => {
+  nuxtApp.vueApp.use(VueAwesomePaginate);
+});
 const vue_slider_6bmQIPZz2Y = () => {
 };
 const plugins = [
@@ -1063,11 +1075,12 @@ const plugins = [
   revive_payload_server_eJ33V7gbc6,
   components_plugin_KR1HBZs4kY,
   swiper,
+  vue_awesome_paginate_l1b0wTlGPB,
   vue_slider_6bmQIPZz2Y
 ];
 const layouts = {
-  default: () => import('./default-d0IPvqbJ.mjs').then((m) => m.default || m),
-  "svg-sprite": () => import('./svg-sprite-Df_1E3IX.mjs').then((m) => m.default || m)
+  default: () => import('./default-B0xzYCT2.mjs').then((m) => m.default || m),
+  "svg-sprite": () => import('./svg-sprite-B8vO2kIr.mjs').then((m) => m.default || m)
 };
 const LayoutLoader = defineComponent({
   name: "LayoutLoader",
@@ -1363,8 +1376,8 @@ const _sfc_main$1 = {
     const statusMessage = _error.statusMessage ?? (is404 ? "Page Not Found" : "Internal Server Error");
     const description = _error.message || _error.toString();
     const stack = void 0;
-    const _Error404 = defineAsyncComponent(() => import('./error-404-DNIX_NsJ.mjs').then((r) => r.default || r));
-    const _Error = defineAsyncComponent(() => import('./error-500-BXyHj9nl.mjs').then((r) => r.default || r));
+    const _Error404 = defineAsyncComponent(() => import('./error-404-C2maQDv3.mjs').then((r) => r.default || r));
+    const _Error = defineAsyncComponent(() => import('./error-500-CbToqt_1.mjs').then((r) => r.default || r));
     const ErrorTemplate = is404 ? _Error404 : _Error;
     return (_ctx, _push, _parent, _attrs) => {
       _push(ssrRenderComponent(unref(ErrorTemplate), mergeProps({ statusCode: unref(statusCode), statusMessage: unref(statusMessage), description: unref(description), stack: unref(stack) }, _attrs), null, _parent));

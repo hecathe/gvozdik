@@ -4,7 +4,6 @@
 
 		<div v-else class="container">
 			<slot></slot>
-
 		</div>
 	</section>
 </template>

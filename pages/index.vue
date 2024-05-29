@@ -8,9 +8,9 @@
 			<catalog-nav :catalog-nav="catalogNav"></catalog-nav>
 		</the-section>
 
-		<product-slider-section :slider-list="saleCards">Популярное</product-slider-section>
+		<product-slider-section :slider-list="saleCards" url="/catalog/popular/">Популярное</product-slider-section>
 
-		<product-slider-section :slider-list="newCards">Новинки</product-slider-section>
+		<product-slider-section :slider-list="newCards" url="/catalog/new/">Новинки</product-slider-section>
 
 		<main-about-company></main-about-company>
 

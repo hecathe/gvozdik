@@ -16,6 +16,7 @@
     "nuxt": "^3.11.1",
     "swiper": "^11.1.0",
     "vue": "^3.4.21",
+    "vue-awesome-paginate": "^1.1.46",
     "vue-router": "^4.3.0",
     "vue-slider-component": "^3.2.24",
     "vue-star-rating": "^2.1.0",

@@ -6,7 +6,7 @@
 			<ui-button @click="showModalQuestion" is-ghost>Задать вопрос</ui-button>
 		</div>
 
-		<app-modal ref="modalReview" title="Оставить отзыв" :opened="modalLeaveReviewOpened">
+		<app-modal ref="modalReview" title="Оставить отзыв">
 			<div class="modal__rating">
 				<ClientOnly >
 					<star-rating 
@@ -22,22 +22,22 @@
 			<app-form>
 				<ul class="form__list">
 					<li class="form__item form__item_full">
-						<ui-input type="text" label="ФИО"></ui-input>
+						<ui-input type="text" label="ФИО" id="name" placeholder="Insert your name"></ui-input>
 					</li>
 					<li class="form__item">
-						<ui-input type="tel" label="Номер телефона"></ui-input>
+						<ui-input type="tel" label="Номер телефона" id="tel" placeholder="+7 900 000 00 00"></ui-input>
 					</li>
 					<li class="form__item">
-						<ui-input type="email" label="E-mail"></ui-input>
+						<ui-input type="email" label="E-mail" id="email" placeholder="ivanov@ivan.com"></ui-input>
 					</li>
 					<li class="form__item form__item_full">
-						<ui-textarea label="Достоинства"></ui-textarea>
+						<ui-textarea label="Достоинства" placeholder="Comment..."></ui-textarea>
 					</li>
 					<li class="form__item form__item_full">
-						<ui-textarea label="Недостатки"></ui-textarea>
+						<ui-textarea label="Недостатки" placeholder="Comment..."></ui-textarea>
 					</li>
 					<li class="form__item form__item_full">
-						<ui-textarea label="Комментарий"></ui-textarea>
+						<ui-textarea label="Комментарий" placeholder="Comment..."></ui-textarea>
 					</li>
 				</ul>
 			</app-form>
@@ -47,16 +47,16 @@
 			<form class="form">
 				<ul class="form__list">
 					<li class="form__item form__item_full">
-						<ui-input type="text" label="ФИО"></ui-input>
+						<ui-input type="text" label="ФИО" id="name" placeholder="Insert your name"></ui-input>
 					</li>
 					<li class="form__item">
-						<ui-input type="tel" label="Номер телефона"></ui-input>
+						<ui-input type="tel" label="Номер телефона" id="tel" placeholder="+7 900 000 00 00"></ui-input>
 					</li>
 					<li class="form__item">
-						<ui-input type="email" label="E-mail"></ui-input>
+						<ui-input type="email" label="E-mail" id="email" placeholder="ivanov@ivan.com"></ui-input>
 					</li>
 					<li class="form__item form__item_full">
-						<ui-textarea label="Вопрос"></ui-textarea>
+						<ui-textarea label="Вопрос" placeholder="Comment..."></ui-textarea>
 					</li>
 				</ul>
 
@@ -76,8 +76,6 @@ export default {
 	},
 	data() {
 		return {
-			modalLeaveReviewOpened: false,
-			modalQuestionOpened: false,
 			rating: 0,
 		}
 	},

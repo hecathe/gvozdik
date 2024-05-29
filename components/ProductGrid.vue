@@ -28,6 +28,8 @@ export default {
     min-width: 0;
 
 	&__item {
+		min-width: 0;
+
 		&.span-2 {
 			grid-column: span 2;
 		}
@@ -36,7 +38,7 @@ export default {
 
 @media screen and (max-width: 1279px) {
 	.product-grid {
-		grid-template-columns: repeat(2, minmax(auto, 500px));
+		grid-template-columns: 1fr 1fr;
 
 		&__item {
 			&.span-2 {
@@ -46,16 +48,10 @@ export default {
 	}
 }
 
-@media (min-width: 0px) and (max-width: 767px) {
+@media (min-width: 0px) and (max-width: 975px) {
 	.product-grid {
-		grid-template-columns: repeat(1, 100%);
+		grid-template-columns: 1fr;
 		row-gap: 36px;
-
-		&__item {
-			&.span-2 {
-				grid-column: span 1;
-			}
-		}
 	}
 }
 </style>

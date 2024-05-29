@@ -87,7 +87,7 @@ export default {
 @media screen and (max-width: 1279px) {
 	.catalog-nav-item {
 		&.span-2 {
-			grid-column: 1 / -1;
+			grid-column: span 1;
 		}
 	}
 }

@@ -12,7 +12,8 @@
 				</div>
 
 				<div class="footer__block">
-					<h3 class="footer__title">Каталог</h3>
+					<!-- <h3 class="footer__title">Каталог</h3> -->
+					<nuxt-link class="footer__title" to="/catalog/">Каталог</nuxt-link>
 					<AppFooterNav :nav-list="navList"></AppFooterNav>
 				</div>
 
@@ -103,6 +104,8 @@ export default {
 		font-weight: 700;
 		font-size: 28px;
 		line-height: 120%;
+		color: inherit;
+		text-decoration: none;
 	}
 
 	&__bottom {

@@ -4,7 +4,7 @@
 			<reviews-card :reviews-card="reviewsCard"></reviews-card>
 		</li>
 		<li>
-			<ui-pagination></ui-pagination>
+			<ui-pagination :total-cards="20" :cards-per-page="3"></ui-pagination>
 		</li>
 	</ul>
 </template>
@@ -16,7 +16,13 @@ export default {
 			type: Array,
 			default: () => [],
 		}
-	}
+	},
+
+	data() {
+		return {
+			currentPage: 1,
+		}
+	},
 }
 </script>
 

@@ -23,7 +23,7 @@ export default {
 		},
 		type: {
 			type: String,
-			default: '',
+			default: 'text',
 		},
 		id: {
 			type: String,
@@ -46,6 +46,7 @@ export default {
 <style lang="scss" scoped>
 .input {
 	$this: &;
+	position: relative;
 
 	&__label {
 		display: grid;

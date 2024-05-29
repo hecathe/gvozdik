@@ -5532,6 +5532,13 @@ vscode-uri@^3.0.2:
   resolved "https://registry.yarnpkg.com/vscode-uri/-/vscode-uri-3.0.8.tgz#1770938d3e72588659a172d0fd4642780083ff9f"
   integrity sha512-AyFQ0EVmsOZOlAnxoFOGOq1SQDWAB7C6aqMGS23svWAllfOaxbuFvcT8D1i8z3Gyn8fraVeZNNmN6e9bxxXkKw==
 
+vue-awesome-paginate@^1.1.46:
+  version "1.1.46"
+  resolved "https://registry.yarnpkg.com/vue-awesome-paginate/-/vue-awesome-paginate-1.1.46.tgz#93091ca23b98d4be7d21149ae0dfbc2997215743"
+  integrity sha512-hjwAJLd2N54j0uuGgqmlTdhZw8NBFQpFiShjGrvxsA0DnvmOQjM18GEor+Ieigz6nE8VA4hQerIDBQjf4lsacg==
+  dependencies:
+    vue "^3.2.25"
+
 vue-bundle-renderer@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/vue-bundle-renderer/-/vue-bundle-renderer-2.0.0.tgz#ecab5c9b2803ab2454ba212afef502e684ddbb8e"
@@ -5607,7 +5614,7 @@ vue-yandex-maps@^1.1.0:
   resolved "https://registry.yarnpkg.com/vue-yandex-maps/-/vue-yandex-maps-1.1.0.tgz#51087ed68b506509ed839cbfe8e3c0db9d2389c8"
   integrity sha512-pYgjEl8BRCkwK2BPF23/OwHD9Yk58wp2t0WSAHa+hKbb1JyMpbDTgVFXD4+7BkzGk6YpQT6zu1BV4aXOcyoJhQ==
 
-vue@^3.0.0:
+vue@^3.0.0, vue@^3.2.25:
   version "3.4.27"
   resolved "https://registry.yarnpkg.com/vue/-/vue-3.4.27.tgz#40b7d929d3e53f427f7f5945386234d2854cc2a1"
   integrity sha512-8s/56uK6r01r1icG/aEOHqyMVxd1bkYcSe9j8HcKtr/xTOFWvnzIVTehNW+5Yt89f+DLBe4A569pnZLS5HzAMA==

@@ -52,7 +52,7 @@ export default {
 	}
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 975px) {
 	.footer-menu {
 		justify-items: flex-start;
 

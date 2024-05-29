@@ -3,8 +3,8 @@
         <app-breadcrumbs :breadcrumbs="breadcrumbs"></app-breadcrumbs>
 
         <the-section class="news-detail">
-            <div class="news-detail__wrap">
-                <div class="news-detail__top">
+            <container-narrow>
+				<div class="news-detail__top">
                     <h1 class="news-detail__title h1">{{ content.title }}</h1>
 
 					<div class="news-detail__social">
@@ -15,7 +15,7 @@
                 </div>
 
                 <div class="news-detail__text" v-html="content.text"></div>
-            </div>
+			</container-narrow>
 
             <swiper-container class="news-detail__slider news-detail-slider" navigation="true">
                 <swiper-slide class="news-detail-slider__item" v-for="(image, index) in content.images" :key="index">
@@ -78,14 +78,6 @@ export default {
 
 <style lang="scss" scoped>
 .news-detail {
-    &__wrap {
-        position: relative;
-        display: grid;
-        grid-template-columns: minmax(auto, 700px);
-        justify-content: center;
-        margin-bottom: 60px;
-    }
-
 	&__top {
 		display: grid;
 		row-gap: 16px;

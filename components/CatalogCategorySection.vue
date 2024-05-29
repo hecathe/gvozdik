@@ -8,11 +8,12 @@
 			</aside>
 
 			<div class="catalog-category__grid">
+				<app-sort></app-sort>
 				<product-grid :product-list="products"></product-grid>
 			</div>
 
 			<div class="catalog-category__pagination">
-				<ui-pagination></ui-pagination>
+				<ui-pagination :total-cards="50" :cards-per-page="7"></ui-pagination>
 			</div>
 		</div>
 	</the-section>
@@ -33,7 +34,7 @@ export default {
 .catalog-category {
     &__wrap {
         display: grid;
-        grid-template-columns: 250px max-content;
+        grid-template-columns: 250px 1fr;
 		column-gap: 28px;
     }
 
@@ -41,6 +42,10 @@ export default {
         display: grid;
         row-gap: 28px;
     }
+
+	&__grid {
+		position: relative;
+	}
 
 	&__pagination {
 		grid-column: 1 / -1;

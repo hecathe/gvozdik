@@ -1,6 +1,6 @@
 <template>
 	<the-section class="product-slider-section">
-		<app-title link link-text="все акции">
+		<app-title link :link-text="linkText" :url="url">
 			<slot></slot>
 		</app-title>
 		<product-slider :cards="sliderList"></product-slider>
@@ -13,6 +13,14 @@ export default {
 		sliderList: {
 			type: Array,
 			default: () => [],
+		},
+		url: {
+			type: String,
+			default: '#',
+		},
+		linkText: {
+			type: String,
+			default: 'посмотреть всё',
 		}
 	}
 }

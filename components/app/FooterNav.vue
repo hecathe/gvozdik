@@ -38,6 +38,13 @@ export default {
 	}
 }
 
+@media screen and (max-width: 1279px) {
+	.footer-nav {
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 20px;
+	}
+}
+
 @media screen and (max-width: 767px) {
 	.footer-nav {
 		display: none;
